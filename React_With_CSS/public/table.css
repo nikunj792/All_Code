@@ -1,0 +1,37 @@
+.parent {
+    background:yellow
+}
+.parent h1 {
+    background: lightcoral
+}
+
+.parent .clear {
+    clear: both
+}
+
+.parent .para {
+    background:green;
+    color:white;
+    width:50%;
+    float:left;
+    padding:1%;
+    border:1px solid pink;
+}
+
+.parent .map {
+    background:grey;
+    color:white;
+    width:25%;
+    float:left;
+    padding:1%;
+    border:1px solid red;
+    position:relative
+
+}
+
+.parent .map button {
+    position:absolute;
+    bottom:0;
+    right:0	;
+    color:black	
+}

@@ -1,0 +1,16 @@
+body {
+  background-color: orange; }
+
+a {
+  background-color: white; }
+
+div {
+  color: white; }
+  div a {
+    margin: 2px;
+    border: 0.5px solid red;
+    background-color: purple; }
+  div h5 {
+    color: black; }
+
+/*# sourceMappingURL=style.css.map */

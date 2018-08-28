@@ -1,0 +1,209 @@
+{
+	"errors": [],
+	"data": {
+		"onboardPreferences": {
+			"bedPreference": {
+				"label": "Bed Preference",
+				"options": [
+					{
+						"label": "2 Twins",
+						"selected": true
+					},
+					{
+						"label": "Queen",
+						"selected": false
+					}
+				]
+			},
+			"pillowPreference": {
+				"label": "Pillow Preference",
+				"options": [
+					{
+						"label": "Feather",
+						"selected": true
+					},
+					{
+						"label": "Hypoallergenic",
+						"selected": false
+					}
+				]
+			},
+			"extraEquipment": {
+				"label": "Extra Equipment (check all that apply)",
+				"options": [
+					{
+						"label": "Bathseat",
+						"selected": true
+					},
+					{
+						"label": "Shower Stool",
+						"selected": false
+					},
+					{
+						"label": "Bed Board",
+						"selected": false
+					},
+					{
+						"label": "Cot/Baby Crib (for under 2 year old)",
+						"selected": false
+					}
+				]
+			},
+			"beveragePreference": {
+				"label": "Beverage preference",
+				"options": [
+					{
+						"label": "Spirits & Wine (limit 2 per suite)",
+						"selected": false,
+						"options": [
+							{
+								"label": "Canadian Club Whisky",
+								"selected": true
+							},
+							{
+								"label": "Jack Daniel's whiskey",
+								"selected": false
+							},
+							{
+								"label": "Jim Beam Bourbon",
+								"selected": false
+							},
+							{
+								"label": "Cutty Sark Whisky",
+								"selected": false
+							},
+							{
+								"label": "J&B Scotch whisky",
+								"selected": false
+							},
+							{
+								"label": "Dewar's Whisky",
+								"selected": false
+							},
+							{
+								"label": "Beefeater Gin",
+								"selected": false
+							},
+							{
+								"label": "Tanqueray Gin",
+								"selected": false
+							},
+							{
+								"label": "Smirnoff Vodka",
+								"selected": false
+							},
+							{
+								"label": "Absolut Vodka",
+								"selected": false
+							},
+							{
+								"label": "Stolichnaya Vodka",
+								"selected": false
+							},
+							{
+								"label": "Bacardi White Room",
+								"selected": false
+							},
+							{
+								"label": "Myers's Rum",
+								"selected": false
+							},
+							{
+								"label": "Baileys Irish Cream",
+								"selected": false
+							},
+							{
+								"label": "House Red Wine",
+								"selected": false
+							},
+							{
+								"label": "House White Wine",
+								"selected": false
+							}
+						],
+						"otherSpiritsCommnent": "",
+						"beerComment": ""
+
+					},
+					{
+						"label": "No Alcohol",
+						"selected": true
+					}
+				],
+				"softdrinkWaterComment": "sfdsfdd sfdfsdsfd fdfsfdsfd"
+			},
+			"dietaryRequests": {
+				"label": "Dietary Requests (check all that apply)",
+				"options": [
+					{
+						"label": "Glutten Free",
+						"selected": true
+					},
+					{
+						"label": "Kosher",
+						"selected": false
+					},
+					{
+						"label": "Lactose/Dairy Free",
+						"selected": false
+					},
+					{
+						"label": "Sugar Free",
+						"selected": false
+					}
+				],
+				"otherComment": "sfdfsfd wrewrewre sfdfdsfdsfd"
+			},
+			"medicalAccessibilityNeeds": {
+				"label": "Medical/Accessibility Needs (check all that apply)",
+				"options": [
+					{
+						"label": "Limited Mobility",
+						"selected": false
+					},
+					{
+						"label": "Wheelchair for (dis)embark",
+						"selected": false
+					},
+					{
+						"label": "Uses Wheelchair part time",
+						"selected": false
+					},
+					{
+						"label": "Uses Wheelchair full time",
+						"selected": false
+					},
+					{
+						"label": "Needs lift equipped transportation",
+						"selected": false
+					},
+					{
+						"label": "Raised toilet seat",
+						"selected": false
+					},
+					{
+						"label": "Blind or has low vision",
+						"selected": false
+					},
+					{
+						"label": "Deaf or hard of hearing",
+						"selected": false
+					},
+					{
+						"label": "Accompanied by service animal",
+						"selected": false
+					},
+					{
+						"label": "Uses oxygen",
+						"selected": false
+					},
+					{
+						"label": "Allergies",
+						"selected": false
+					}
+				],
+				"otherComment": "sfdssfd wrwewre sfdssfdfds"
+			}
+		}
+	}
+}

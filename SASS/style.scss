@@ -1,0 +1,26 @@
+	$colorBody : orange;
+	$colorText : white;
+	body
+	{
+		background-color : $colorBody
+	}
+	a
+	 {
+		background-color:white
+	 }
+	div
+	{
+			color:$colorText;
+			a
+			{
+				margin: 2px;
+				border: 0.5px solid red;
+				background-color:purple;
+			}
+	  
+			h5
+			{
+				color:black
+			}
+	 }
+	 

@@ -1,0 +1,62 @@
+<head>
+
+</head>
+<body>
+    <!-- First Approach -->
+<!-- <button onclick="func()">Click</button> -->
+<!-- Second Approach -->
+<button>Click</button>
+</body>
+<script>
+    let counter =0;
+    //<!--First Approach Using click function  -->
+
+        // function func(){
+        //     counter =counter + 1;
+        //     console.log('Code is working',counter);
+        // }
+
+    // <!-- Second Approach Using query selector -->
+        // function startGame(){
+        //     document.querySelector('button').addEventListener('click',()=>{
+        //     ++counter;
+        // })
+        // setTimeout(()=>{
+        //     if(counter >5){
+        //         alert("You Won"+ counter);
+        //     }
+        //     else{
+        //         alert("You Lost");
+        //     }
+        // },2000);
+        // }
+
+        // startGame();
+
+    //<!--Third Approach Introducing Promises  -->
+
+        function startGame(){
+            document.querySelector('button').addEventListener('click',()=>{
+            ++counter;
+        })
+        return new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                if(counter >5){
+                    resolve();
+                }
+                else{
+                    reject();
+                }
+            },2000);
+        });
+        }
+
+        startGame()
+        .then(()=>{
+            alert("You Won");
+        })
+        .catch(()=>{
+            alert("You Lost");
+        });
+
+</script>
