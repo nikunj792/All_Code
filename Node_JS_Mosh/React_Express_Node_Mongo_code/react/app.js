@@ -17,7 +17,7 @@ export default class Math extends React.Component{
     }
     handleButton(){
         const val = this.state;
-        fetch('http://localhost:3000/name',{
+        fetch('http://localhost:3000/post',{
             method:'POST',
             headers: {
                 "Content-Type": "application/json; charset=utf-8"

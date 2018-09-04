@@ -32,7 +32,12 @@ const customerSchema = new Schema({
 mongoose.connect("mongodb://localhost/customer");
 const customer = mongoose.model('customer', customerSchema);
 
-app.post('/name',(req, res)=>{
+app.get('/get',(req, res)=>{
+    customer.find({})
+    .then(result=>res.status(200).send(result))
+});
+
+app.post('/post',(req, res)=>{
     const data ={
         name: req.body.fname,
         age:20,
