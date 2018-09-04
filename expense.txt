@@ -1,0 +1,12 @@
+Swapna  		:: 25000
+Credit Card 		:: 15000
+Room Rent		:: 6000
+Girish			:: 120
+Manju			:: 100
+Ravi			:: 60
+Prabhat			:: 2000
+Extra			:: 1000
+*************************************
+Total			:: 49480
+
+
