@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>508 Implementation</title>
+    <style>
+        .div-left{
+            float:left;
+            border: 1px solid red
+        }
+        .p-left{
+            border: 1px solid blue
+        }
+        .div-right{
+            float:right;
+            border: 1px solid yellow
+        }
+        .p-right{
+            border: 1px solid green
+        }
+        .div-left-2{
+            float:left;
+            border: 1px solid red
+        }
+        .p-left-2{
+            border: 1px solid blue
+        }
+        .div-right-2{
+            float:right;
+            border: 1px solid yellow
+        }
+        .p-right-2{
+            border: 1px solid green
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="div-left" class="div-left" tabindex="0">
+            <p id="p-left" class="p-left" tabindex="1">Left Para</p>
+        </div>
+        <div id="div-right" class="div-right" tabindex="0">
+            <p id="p-right" class="p-right" tabindex="1">Right Para</p>
+        </div>
+    </div>
+    <div>
+            <div id="div-left-2" class="div-left-2" tabindex="0">
+                <p id="p-left-2" class="p-left-2" tabindex="1">Left Para 2</p>
+            </div>
+            <div id="div-right-2" class="div-right-2" tabindex="0">
+                <p id="p-right-2" class="p-right-2" tabindex="1">Right Para 2</p>
+            </div>
+        </div>
+<script>
+    var domTags = document.children.filter(item=>item!="script");
+   console.log('qqqqwer', domTags);
+checkTags(domTags.innerHTML);
+</script>
+<script>
+    var data ="sdsdsa";
+</script>
+</body>
+</html>

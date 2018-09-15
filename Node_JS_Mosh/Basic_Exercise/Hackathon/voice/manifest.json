@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Fill Over Speech",
+  "version": "1",
+
+  "description": "Filling the Form using Voice",
+
+  "icons": {
+      "48": "icons/microphone.png",
+      "92": "icons/microphone.png"
+  },
+
+  "content_scripts": [{
+      "matches": ["*://*/*"],
+      "js": ["speech.js"]
+  }]
+}

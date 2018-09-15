@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Voice</title>
+  <style type="text/css">
+    .form-style-5 {
+      max-width: 500px;
+      padding: 10px 20px;
+      background: #f4f7f8;
+      margin: 10px auto;
+      padding: 20px;
+      background: #f4f7f8;
+      border-radius: 8px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    .form-style-5 fieldset {
+      border: none;
+    }
+
+    .form-style-5 legend {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+
+    .form-style-5 label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .form-style-5 input[type="text"],
+    .form-style-5 input[type="date"],
+    .form-style-5 input[type="datetime"],
+    .form-style-5 input[type="email"],
+    .form-style-5 input[type="number"],
+    .form-style-5 input[type="search"],
+    .form-style-5 input[type="time"],
+    .form-style-5 input[type="url"],
+    .form-style-5 textarea,
+    .form-style-5 select {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background: rgba(255, 255, 255, .1);
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      margin: 0;
+      outline: 0;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      background-color: #e8eeef;
+      color: #8a97a0;
+      -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+      margin-bottom: 30px;
+
+    }
+
+    .form-style-5 input[type="text"]:focus,
+    .form-style-5 input[type="date"]:focus,
+    .form-style-5 input[type="datetime"]:focus,
+    .form-style-5 input[type="email"]:focus,
+    .form-style-5 input[type="number"]:focus,
+    .form-style-5 input[type="search"]:focus,
+    .form-style-5 input[type="time"]:focus,
+    .form-style-5 input[type="url"]:focus,
+    .form-style-5 textarea:focus,
+    .form-style-5 select:focus {
+      background: #d2d9dd;
+    }
+
+    .form-style-5 select {
+      -webkit-appearance: menulist-button;
+      height: 35px;
+    }
+
+    .form-style-5 .number {
+      background: #1abc9c;
+      color: #fff;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-right: 4px;
+      line-height: 30px;
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+      border-radius: 15px 15px 15px 0px;
+    }
+
+    .form-style-5 input[type="submit"],
+    .form-style-5 input[type="button"] {
+      position: relative;
+      display: block;
+      padding: 19px 39px 18px 39px;
+      color: #FFF;
+      margin: 0 auto;
+      background: #1abc9c;
+      font-size: 18px;
+      text-align: center;
+      font-style: normal;
+      width: 100%;
+      border: 1px solid #16a085;
+      border-width: 1px 1px 3px;
+      margin-bottom: 10px;
+    }
+
+    .form-style-5 input[type="submit"]:hover,
+    .form-style-5 input[type="button"]:hover {
+      background: #109177;
+    }
+
+    .mic {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .mic img {
+      padding: 10px;
+    }
+
+    .mic img:hover {
+      background: rgb(230, 230, 230);
+      padding: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Search Form -->
+  <div class="form-style-5">
+    <form id="labnol" method="get" action="https://www.google.com/search">
+
+      <fieldset>
+
+          <legend> <span class="number">1</span> Candidate Info</legend>
+
+          <label for="name">First Name</label>
+          <input type="text" name="name" id="name" placeholder="Your First Name *">
+
+          <label for="hello">Last Name</label>
+          <input type="text" name="hello" id="hello" placeholder="Your Last Name *">
+
+      </fieldset>
+
+      <div class="mic"><img onclick="voiceRecognise()" src="microphone.png" width="30px" height="30px" /></div>
+    </form>
+  </div>
+
+  <script>
+          var div = document.createElement('div');
+          var img = document.createElement('IMG');
+          div.setAttribute('id','mic###');
+          img.setAttribute('id','img');
+          img.setAttribute('onclick',"voiceRecognise()");
+          img.setAttribute('src',"microphone.png");
+          img.setAttribute('width','30px');
+          img.setAttribute('height','30px');
+          document.body.appendChild(div);
+          document.body.appendChild(img);
+          var val = "";
+          var htmlPageIdArray =[];
+          var myInputIdArray = document.getElementsByTagName('input');
+          for (i = 0; i < myInputIdArray.length; i++) {
+            val += i +" id is " +  myInputIdArray[i].id +"</br>";
+            htmlPageIdArray.push({
+              key:i,
+              value:myInputIdArray[i].id
+            });
+    };
+          document.getElementById('mic###').innerHTML = val;
+          
+         var recognition = new webkitSpeechRecognition(); 
+         var label;
+         function voiceRecognise() {                
+           if (window.hasOwnProperty('webkitSpeechRecognition')) {
+             recognition.continuous = false;
+             recognition.interimResults = false;
+             recognition.lang = "en-US";
+             recognition.start();
+             recognition.onresult = function (e) {
+              label = e.results[0][0].transcript;
+              for(var i=0; i<htmlPageIdArray.length;i++){
+            if(htmlPageIdArray[i].key ==label)
+            label=htmlPageIdArray[i].value;
+          }
+          if(document.getElementById(label) !== null){
+            document.getElementById(label).focus();
+            data();
+            recognition.stop();
+          }
+          else{
+            alert("I didn't hear you , try again");
+            recognition.stop();            
+          }          
+        }
+        recognition.onerror = function (e) {
+          recognition.stop();
+        }
+      }
+    }
+
+     
+         function data() {
+           var recog = new webkitSpeechRecognition();
+           recog.start();
+           recog.onresult = function (e) {
+             document.getElementById(label).value = e.results[0][0].transcript
+             console.log('second', e.results[0][0].transcript);
+             recognition.stop();
+           }
+         }
+       </script>
+</body>
+
+</html>
