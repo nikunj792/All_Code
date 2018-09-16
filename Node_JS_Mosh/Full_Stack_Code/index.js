@@ -6,7 +6,8 @@ constructor(props){
     super(props);
     this.state={
         data:'Default',
-        input:0,
+        fname:'',
+        lname:'',
         postValue:''
     }
     this.handleInput= this.handleInput.bind(this);
@@ -21,27 +22,34 @@ handleClick(){
 
 handleInput(e){
     this.setState({
-        input:e.target.value
+        [e.target.name]:e.target.value
     })
 }
 
 handleInputButton(){
+    const data ={
+    firstName: this.state.fname,
+    lastName: this.state.lname    
+    };
+
     fetch('http://localhost:3000/postNum',{
         method:"POST",
         headers: {
             "Content-Type": "application/json; charset=utf-8"
         },
-        body: JSON.stringify(this.state)
+        body: JSON.stringify(data)
     }).then(res=>res.json())
-        .then(res=>this.setState({postValue: res.value}))
+        .then(res=>console.log(res))
         .catch(error=>console.log('Error is ', error));
 }
 
 render(){
     return(
         <fieldset>
-            <legend>{'Code From Stratch!!!'}</legend>
-            <input type="text" onChange={(e)=>this.handleInput(e)} />
+            <legend>{'First Name'}</legend>
+            <input type="text" id="fname" name="fname" onChange={(e)=>this.handleInput(e)} />
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" onChange={(e)=>this.handleInput(e)} />
             <button onClick={()=>this.handleClick()}>Click GET</button>
             <button onClick={()=>this.handleInputButton()}>Click POST</button>
             {this.state.data}<br />

@@ -1,0 +1,41 @@
+.class, .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.class {
+  min-width: 30ox;
+}
+
+.btn-color1 {
+  background-color: red;
+}
+
+.btn-color2 {
+  background-color: green;
+}
+
+.btn-color3 {
+  background-color: yellow;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  color: gold;
+}
+
+.box {
+  border: 1px solid pink;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+.box .innerbox {
+  border: 1px solid red;
+  padding: 20px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+// Define map => key, value
+$width: ( wd1: india,  wd2: japan);
+$color: ( clr1: red, clr2: yellow);
+
+$sample1: ( width1:20px, width2:30px );
+$sample2: ( color1:green, color2:yellow );
+$merged: map-merge($sample1, $sample2);
+$map-remove: map-remove($merged, width1 );
+
+
+// map-get => map name, key
+.india {
+    // color: map-get($map: $colors, $key: ctry1 );
+    // width: map-get($width, wd2 );
+    height: map-keys($color);
+    min-width: map-has-key($color , clr5);
+
+    color: map-get($merged, color2 );
+    width: map-get($merged, width1 );
+    padding: map-get($map-remove, width2 );
+
+    @if map-get($map-remove, width1 ) {
+        padding: map-get($map-remove, width2 );
+    }
+    @else {
+        padding:130px;
+    }
+
+    min-width: map-keys($merged);
+    min-width: map-values($merged);
+    
+}
+
+
+// map-has-key => map name, key {map-has-key check key is available into the target map or not?}
+
+
+
+// map-merge => first merge two maps and get target map value thorugh key

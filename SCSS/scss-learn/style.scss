@@ -1,0 +1,53 @@
+$color1: red;
+$color2: green;
+$color3: yellow;
+$color-array: (color1: $color1, color2: $color2, color3: $color3);
+
+//Placeholder Class.
+%inheritance{
+    display: flex
+}
+
+//Normal Class.
+.class{
+    min-width: 30ox;
+    @extend %inheritance;
+}
+
+//Mixin
+@mixin btn-value{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    @extend %inheritance;
+}
+
+//Mixin With argument Value.
+@mixin btn-primary($color){
+    background-color: $color;
+}
+
+//Looping and creating dynamically. 
+@each $name, $value in $color-array{
+    .btn-#{$name}{
+        @include btn-primary($value);
+    }
+}
+
+//Normal Class.
+.btn{
+    @include btn-value;
+    color: gold
+}
+
+//Box Model.
+.box{
+border:1px solid pink;
+width:100%;
+padding: 20px;
+margin:auto;
+    .innerbox{
+        border:1px solid red;
+        padding:20px;
+    }
+}

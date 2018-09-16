@@ -6,12 +6,13 @@ app.use(express.static('public'));
 app.use(express.json());
 app.listen(3000,()=>console.log('Started'));
 
+
 const numberSchema ={
-    intNumber:{
-        type: Number
+    fname:{
+        type: String
     },
-    floatNumber:{
-        type:Number
+    lname:{
+        type:String
     }
 }
 
@@ -24,7 +25,8 @@ app.get('/getNum',(req, res)=>{
 });
 
 app.post('/postNum',(req,res)=>{
-    const num = new numberArray({intNumber: req.body.input})
+    console.log('aaaaaaa', req.body);
+    const num = new numberArray({fname: req.body.firstName, lname:req.body.lastName})
     num.save();
-    res.status(200).send({value:req.body.input});
+    res.status(200).send({value:req.body.lastName});
 })
