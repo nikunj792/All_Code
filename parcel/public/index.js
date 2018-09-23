@@ -3,7 +3,7 @@ import { render } from "react-dom";
 const App = () =>{
   return (
     <div>
-      <h1>Hello1111111 22222Parcel</h1>
+      <h1>Hello11 222Parcel</h1>
     </div>
   )
 };

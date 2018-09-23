@@ -10,13 +10,74 @@
     Coding Playground
     <script>
         
-class Sample{
-    getData(value){
-        this.value = value;
+// class Sample{
+//     getData(value){
+//         this.value = value;
+//     }
+// }
+// const obj = new Sample();
+// console.log('Return ', 0.1+0.5 === 0.6);
+// ()=>{
+//     console.log('Checking the Value of this in arrow function ', this);
+// }
+
+// function x(){  
+//     console.log('Checking the Value of this in classical method ', this);
+// }
+
+// (function foo(){
+//     console.log('value of this is', this);
+// })();
+
+// (function foo(){
+//     'use strict'
+//     console.log('value of this in strict mode is ', this);
+// })();
+
+function x(fname, lname){
+    this.fname= fname;
+    this.lname = lname;
+    this.func=function(){
+        console.log('dddd',this.fname + this.lname);
+        // self= this;
+        console.log('Value of this inside the method', this.fname);
+        setTimeout(()=>{
+            console.log('inside the set time out ', this.fname);
+        },3000)
+
     }
 }
-const obj = new Sample();
-console.log('Return ', 0.1+0.5 === 0.6);
+
+const data = new x('Nikunj', 'Agarwal');
+const data2 = new x('Priyanka', 'Daga');
+// data.func.call(data2); // This will refer the first object data.
+ 
+let newData = data.func.bind(data2);
+newData(); 
+
+class oops{
+    handle(){
+    console.log('inside the class', this);
+    }
+}
+
+const dat = new oops();
+dat.handle();
+// function foo(){
+    
+//     console.log('With strict mode ', this===window);
+// }
+
+// const user ={
+//     count:10,
+//     foo:foo,
+//     foo1:function(){
+//         console.log('Inside the object is ', this===window);
+//     }
+// }
+
+// let val =user.foo1;
+// val();
     </script>
 </body>
 </html>
