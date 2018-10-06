@@ -1,6 +1,7 @@
 import React from 'react';
 import {PropTypes} from 'react';
 import FieldSet from 'FieldSet';
+import SetState from 'SetState';
 
 export default class Index extends React.Component{
 
@@ -16,6 +17,7 @@ export default class Index extends React.Component{
 			<div>
 				{'I am index'}
 				<FieldSet name={arr}/>
+                <SetState />
 			</div>
 		);
 	}

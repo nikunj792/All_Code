@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expandable Header</title>
+  <style>
+    .content {
+            padding: 0 18px;
+            display: none;
+            background-color: yellow;
+            overflow: hidden;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn" onclick="expand()">Click TO Expand</button>
+    <div class="content">
+        <p>I am Daasddddddddddddddddddddddddnlknnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnta</p>
+    </div>
+<script>
+function expand(){
+    console.log('aaaa');
+    const content = document.getElementsByClassName('btn');
+    content[0].addEventListener('click', function(e){
+        var data = this.nextElementSibling;
+        if(data.style.display === "block"){
+            data.style.display = "none";
+        }
+        else{
+            data.style.display = "block";
+        }
+    })
+}
+</script>
+</body>
+</html>

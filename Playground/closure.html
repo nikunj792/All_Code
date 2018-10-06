@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playground</title>
+</head>
+<body>
+    <script>
+        var arr = base(5); // Getting the value in that case.
+
+        function base(num){
+            return function(x){
+                return num+x;
+            }
+        }
+
+        var a = base1(4)(3)(2);
+        function base1(a){
+            return (b)=>(c)=>a*b*c;
+        }
+
+        function parent(){
+            let name="Nikunj";
+            function child(){
+                console.log('Acess outside value',name);
+            }
+            child();
+        }
+        parent();
+
+        console.log('Value if I will call arr(3) is',arr(3)); // Will Give you 8.
+        console.log('Value if I will call a is',a); // Mul function example
+        
+        
+    </script>
+</body>
+</html>
