@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import isNull from 'lodash';
 import isEmpty from 'lodash';
 import Table from './component/table';
-import Sample from './component/sample';
+import List from 'List';
+import WebComponent from 'WebComponent';
 import Gmail from './component/gmail';
 
 
@@ -32,7 +33,6 @@ export default class App extends React.Component{
 		return (
 			<div className="main">					
 				{/* <Table fname={this.state.fname} object={object} lname={this.state.lname} handleCallBack={(e)=>this.handleCallBack(e)}/> */}
-				{/* <Sample /> */}
 				<Gmail handleGmailCallBack={(a,b)=>this.handleGmailCallBack(a,b)} />
 				<div className="links">
 					<div style={{
@@ -46,6 +46,7 @@ export default class App extends React.Component{
 						<a href="#">English</a>
 					</div>
 				</div>
+                <web-component name={'Hello'} />
 			</div>
 				)
 	}

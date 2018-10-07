@@ -8,6 +8,22 @@
 </head>
 <body>
     <script>
+        const arrValue = [1,2,3,4,5];
+        for(var i=0;i<4;i++){
+    setTimeout(function(){
+        console.log('index is',i, 'value is ', arr[i]);   // Print index is 4 value is undefined.
+},1000)
+}
+ for(var i=0;i<4;i++){
+    setTimeout(function(){
+        console.log('aaaa', i);   // Print 4 four times.
+},1000)
+}
+    for(let i=0;i<4;i++){
+        setTimeout(function(){
+            console.log('aaaa', i);  // Print 0 to 3.
+    },1000)
+    }
         var arr = base(5); // Getting the value in that case.
 
         function base(num){

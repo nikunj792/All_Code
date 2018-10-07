@@ -19,13 +19,21 @@
 <body>
     <button class="btn" onclick="expand()">Click TO Expand</button>
     <div class="content">
-        <p>I am Daasddddddddddddddddddddddddnlknnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnta</p>
+        <p>I am Expandable</p>
+    </div>
+    <button class="btn" onclick="expand()">Click TO Expand</button>
+    <div class="content">
+        <p>I am Expandable</p>
     </div>
 <script>
+
 function expand(){
     console.log('aaaa');
     const content = document.getElementsByClassName('btn');
-    content[0].addEventListener('click', function(e){
+    var i;
+    for(i=0;i<content.length;i++){
+    content[i].addEventListener('click', function(e){
+        
         var data = this.nextElementSibling;
         if(data.style.display === "block"){
             data.style.display = "none";
@@ -34,6 +42,7 @@ function expand(){
             data.style.display = "block";
         }
     })
+}
 }
 </script>
 </body>

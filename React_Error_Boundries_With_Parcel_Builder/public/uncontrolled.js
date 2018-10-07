@@ -8,6 +8,7 @@ class NameForm extends React.Component {
     constructor(props) {
       super(props);
       this.handleSubmit = this.handleSubmit.bind(this);
+      //Creating the ref for getting the value from DOM instead of Event Handler.
       this.input = React.createRef();
       this.value = React.createRef();
     }

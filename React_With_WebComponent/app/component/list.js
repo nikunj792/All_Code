@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Sample extends React.Component{
+export default class List extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
@@ -24,5 +24,5 @@ export default class Sample extends React.Component{
 	}
 }
 
-Sample.propTypes={};
-Sample.defaultProps={};
+List.propTypes={};
+List.defaultProps={};

@@ -10,7 +10,8 @@ module.exports = {
     extensions: ['', '.js', '.jsx'],
     alias:{
       Table : 'app/component/table.js',
-      Sample: 'app/component/sample.js'
+      WebComponent: 'app/component/web.js',
+      List :'app/component/list.js'
     }
   },
   module: {
