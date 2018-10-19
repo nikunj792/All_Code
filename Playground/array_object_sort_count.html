@@ -9,45 +9,48 @@
 <body>
     <script>
         var array = [2,2,1,1,2,1,2,1,2,1,4,5,6,6,6,8,8,9,9,5];
-        function count(array){
-            array.sort();
-            var a=[], b=[], prev;
-            for(var i=0;i<array.length;i++){
-                if(array[i]!==prev){
-                    a.push(array[i]);
-                    b.push(1);
-                    console.log('value of b array is ', b);
-                }
-                else{
-                    b[b.length-1]++;
-                    console.log('aaaa', b[b.length-1]);
-                }
-                prev=array[i];
-            }
-            return [a,b];
-        }
-        var result = count(array);
+        // function count(array){
+        //     array.sort();
+        //     var a=[], b=[], prev;
+        //     for(var i=0;i<array.length;i++){
+        //         if(array[i]!==prev){
+        //             a.push(array[i]);
+        //             b.push(1);
+        //             console.log('value of b array is ', b);
+        //         }
+        //         else{
+        //             b[b.length-1]++;
+        //             console.log('aaaa', b[b.length-1]);
+        //         }
+        //         prev=array[i];
+        //     }
+        //     return [a,b];
+        // }
+        //Both ways,you can remove the duplicate value from the array.
+        var result = Array.from(new Set(array));
+        // var result = [...new Set(array)];
+        console.log('Removed Duplicate Value', result);
 
-        var maxSpeed = {
-                    car: 300, 
-                    bike: 60, 
-                    motorbike: 200, 
-                    airplane: 1000,
-                    helicopter: 400, 
-                    rocket: 8 * 60 * 60
-                };
-        var sortedObjectArray = [];
-        for(var item in maxSpeed){
-        sortedObjectArray.push([item, maxSpeed[item]]);
-        }
-        sortedObjectArray.sort(function(a, b) {
-            console.log('value of a is', a[1]);
-            console.log('value of b is', b[1]);
-         return a[1] - b[1];
-});
+//         var maxSpeed = {
+//                     car: 300, 
+//                     bike: 60, 
+//                     motorbike: 200, 
+//                     airplane: 1000,
+//                     helicopter: 400, 
+//                     rocket: 8 * 60 * 60
+//                 };
+//         var sortedObjectArray = [];
+//         for(var item in maxSpeed){
+//         sortedObjectArray.push([item, maxSpeed[item]]);
+//         }
+//         sortedObjectArray.sort(function(a, b) {
+//             console.log('value of a is', a[1]);
+//             console.log('value of b is', b[1]);
+//          return a[1] - b[1];
+// });
 
-        console.log('Sorted Object is ', sortedObjectArray);
-        console.log('Sorted Array is', result);
+//         console.log('Sorted Object is ', sortedObjectArray);
+//         console.log('Sorted Array is', result);
         
     </script>
 </body>

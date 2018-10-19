@@ -12,7 +12,10 @@
     var val = "";
     var myInputIdArray = document.getElementsByTagName('input');
     for (i = 0; i < myInputIdArray.length; i++) {
+        if(myInputIdArray[i].getAttribute("type")=="text" || myInputIdArray[i].getAttribute("type")=="password" ||myInputIdArray[i].getAttribute("type")=="email" ||myInputIdArray[i].getAttribute("type")=="telephone"){
             val += i +" id is " +  myInputIdArray[i].id +"</br>";
+      }
+            
     };
     document.getElementById('mic###').innerHTML = val;
 
@@ -24,10 +27,12 @@
         var htmlPageIdArray =[];
         var myInputIdArray = document.getElementsByTagName('input');
         for (i = 0; i < myInputIdArray.length; i++) {
+            if(myInputIdArray[i].getAttribute("type") !== "hidden" &&(myInputIdArray[i].getAttribute("type")=="text" || myInputIdArray[i].getAttribute("type")=="password" ||myInputIdArray[i].getAttribute("type")=="email" ||myInputIdArray[i].getAttribute("type")=="telephone")){
                 htmlPageIdArray.push({
                   key:i,
                   value:myInputIdArray[i].id
                 });
+            }
         };
         recognition.continuous = false;
         recognition.interimResults = false;

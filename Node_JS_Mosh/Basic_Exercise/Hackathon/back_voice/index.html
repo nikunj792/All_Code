@@ -152,6 +152,11 @@
           <label for="hello">Last Name</label>
           <input type="text" name="hello" id="hello" placeholder="Your Last Name *">
 
+          <label for="pwd">Password</label>
+          <input type="password" name="pwd" id="pwd" placeholder="Your Password *">
+
+          <input type="hidden" name="hidden" id="hidden" placeholder="Your Hiddem *">
+
       </fieldset>
 
       <div class="mic"><img onclick="voiceRecognise()" src="microphone.png" width="30px" height="30px" /></div>
@@ -173,11 +178,15 @@
           var htmlPageIdArray =[];
           var myInputIdArray = document.getElementsByTagName('input');
           for (i = 0; i < myInputIdArray.length; i++) {
-            val += i +" id is " +  myInputIdArray[i].id +"</br>";
-            htmlPageIdArray.push({
-              key:i,
-              value:myInputIdArray[i].id
-            });
+              if(myInputIdArray[i].getAttribute("type") !== "hidden" &&(myInputIdArray[i].getAttribute("type")=="text" || myInputIdArray[i].getAttribute("type")=="password" ||myInputIdArray[i].getAttribute("type")=="email" ||myInputIdArray[i].getAttribute("type")=="telephone")){
+                myInputIdArray[i].append(div);   
+                val += i +" id is " +  myInputIdArray[i].id +"</br>";
+                    htmlPageIdArray.push({
+                    key:i,
+                    value:myInputIdArray[i].id
+                    });
+              }
+            
     };
           document.getElementById('mic###').innerHTML = val;
           
