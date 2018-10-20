@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoisting</title>
+</head>
+<body>
+    <script>
+
+       var a=1;
+       function test(){
+           a=10;
+           return;
+           function a(){};
+           
+       }
+       test();
+       console.log('value is ', a);
+//Both will hoist but second will hoist last , so return value is 8.
+function foo(){
+    function bar() {
+        return 3;
+    }
+return bar();
+    function bar() {
+        return 8;
+    }
+}
+console.log('Second example for hoisting ', foo());
+//Incase of variable only declaration hoist but in case of function defination also hoisted.Because of that it will throw error.
+function parent() {
+    var hoisted = "I'm a variable";
+    function hoisted() {
+        return "I'm a function";
+    }
+    return hoisted(); 
+}
+
+// console.log('Another example for hoisting', parent()); // To avoid error, comment the call of the function.
+        
+    </script>
+</body>
+</html>

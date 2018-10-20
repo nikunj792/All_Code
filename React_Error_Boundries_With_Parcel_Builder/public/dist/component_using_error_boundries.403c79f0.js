@@ -22143,26 +22143,28 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(ErrorBoundries).call(this, props));
     _this.state = {
-      flag: false
+      error: null,
+      errorInfo: null
     };
     return _this;
   }
 
   _createClass(ErrorBoundries, [{
     key: "componentDidCatch",
-    value: function componentDidCatch(error, info) {
+    value: function componentDidCatch(error, errorInfo) {
       this.setState({
-        flag: true
+        error: error,
+        errorInfo: errorInfo
       });
     }
   }, {
     key: "render",
     value: function render() {
-      if (this.state.flag) {
-        return _react.default.createElement("div", null, 'I am Error Boundries, and you are wrong');
+      if (this.state.errorInfo) {
+        return _react.default.createElement("div", null, 'I am Error Boundries, and you are wrong', this.state.error && this.state.error.toString());
       }
 
-      return 'No Error';
+      return this.props.children;
     }
   }]);
 
@@ -22212,6 +22214,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(CheckError).call(this, props));
     _this.state = {
+      counter: 0,
       flag: false
     };
     return _this;
@@ -22220,8 +22223,10 @@ function (_React$Component) {
   _createClass(CheckError, [{
     key: "handleClick",
     value: function handleClick() {
-      this.setState({
-        flag: true
+      var counter = this.state.counter; //Setting the state using functional approach, this way state will be more predictable.
+
+      this.setState(function (prevState, props) {
+        return prevState.counter = prevState.counter + 1;
       });
     }
   }, {
@@ -22229,7 +22234,11 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return _react.default.createElement("div", null, 'I am check error', _react.default.createElement("button", {
+      if (this.state.counter === 5) {
+        throw new Error('I crashed!');
+      }
+
+      return _react.default.createElement("div", null, this.state.counter, _react.default.createElement("button", {
         onClick: function onClick() {
           return _this2.handleClick();
         }
@@ -22241,6 +22250,21 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = CheckError;
+},{"react":"../node_modules/react/index.js"}],"components/normal.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = NoError;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function NoError() {
+  return ' I am Normal Stateless Component';
+}
 },{"react":"../node_modules/react/index.js"}],"components/component_using_error_boundries.js":[function(require,module,exports) {
 "use strict";
 
@@ -22256,6 +22280,8 @@ var _reactDom = require("react-dom");
 var _error = _interopRequireDefault(require("./error"));
 
 var _checkError = _interopRequireDefault(require("./checkError"));
+
+var _normal = _interopRequireDefault(require("./normal"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22291,7 +22317,7 @@ function (_React$Component) {
   _createClass(ComponentError, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, 'I am Using the Error Boundries', _react.default.createElement(_error.default, null, _react.default.createElement(_checkError.default, null)));
+      return _react.default.createElement("div", null, _react.default.createElement(_error.default, null, _react.default.createElement(_checkError.default, null)), _react.default.createElement(_normal.default, null));
     }
   }]);
 
@@ -22300,7 +22326,7 @@ function (_React$Component) {
 
 exports.default = ComponentError;
 (0, _reactDom.render)(_react.default.createElement(ComponentError, null), document.getElementById("app"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./error":"components/error.js","./checkError":"components/checkError.js"}],"../../../../../Users/NikunjAgarwal/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./error":"components/error.js","./checkError":"components/checkError.js","./normal":"components/normal.js"}],"../../../../../Users/NikunjAgarwal/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -22327,7 +22353,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52914" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58426" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

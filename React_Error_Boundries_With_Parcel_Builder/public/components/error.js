@@ -4,23 +4,28 @@ export default class ErrorBoundries extends React.Component {
     constructor(props) {
       super(props);
       this.state={
-          flag:false
+          error:null,
+          errorInfo:null
       }
     }
   
-    componentDidCatch(error, info){
+    componentDidCatch(error, errorInfo){
         this.setState({
-            flag: true
+            error,
+            errorInfo
         })
     }
     
     render() {
-        if(this.state.flag){
+        if(this.state.errorInfo){
       return (
-        <div>{'I am Error Boundries, and you are wrong'}</div>
+        <div>
+            {'I am Error Boundries, and you are wrong'}
+            {this.state.error && this.state.error.toString()}
+        </div>
       );
         }
-        return 'No Error'
+        return this.props.children
     }
   }
 
