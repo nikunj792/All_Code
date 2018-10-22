@@ -8,7 +8,14 @@
 </head>
 <body>
     <script>
-        
+        var rabbit ={
+            eat: true
+        }
+        var camel ={
+            drink: true
+        }
+        rabbit.__proto__ = camel;
+        console.log('Its proto is ', rabbit.__proto__);
     </script>
 </body>
 </html>
