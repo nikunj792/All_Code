@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selection Sort</title>
+</head>
+<body>
+    <script>
+        const arr =[2,3,4,4,2,12,2434,45,2,13,12,6436,36,2,4323,545,74,56,235,3245,32,543,6,76,8,234,32,565,4343,32,5,436,346,3];
+        function selectionSort(arr){
+            const length = arr.length;
+            for(var i=0;i<length-1;i++){
+                var minIndex = i;
+                for(var j=i+1;j<length;j++){
+                    if(arr[j]<arr[minIndex]){
+                        minIndex =j;
+                    }
+                    swapValue()
+                }
+            }
+
+        }
+        selectionSort(arr);
+    </script>
+</body>
+</html>
