@@ -1,0 +1,18 @@
+<div class="container color-dark">
+  <div class="col">
+    <p> I am coming from component file of Home {{value}}</p>
+  </div>
+  <div class="col">
+      <p> Sub</p>
+    </div>
+</div>
+<div class="container color-light">
+    <div class="col">
+      <p *ngFor="let input of data"> {{input}}</p>
+    </div>
+    <div class="col">
+        <input type="text" placeholder="Enter the Text" [(ngModel)]="inputText">
+        <input type="number" placeholder="Enter the Number" [(ngModel)]="inputNumber">
+        <button (click)="handleButton()">Submit</button>
+      </div>
+  </div>
