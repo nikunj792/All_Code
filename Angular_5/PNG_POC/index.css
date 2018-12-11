@@ -1,0 +1,629 @@
+body{
+  background-color:gold;
+}
+.sprite {
+  background-image:url('css_sprites.png');
+  background-repeat:no-repeat;
+  display:block;
+  width: 50%;
+  height: 200px;
+}
+
+#bg-check_sign {
+    width: 22px; 
+	height: 22px;
+    background: url('css_sprites.png') -2228px -1520px;
+}
+
+
+#bg-error {
+    width: 22px;
+	height: 22px;
+    background: url('css_sprites.png') -2228px -1562px;
+}
+
+
+#bg-ic_arrow_net {
+    width: 21px;
+	height: 41px;
+    background: url('css_sprites.png') -2792px -1581px;
+}
+
+
+#bg-ic_arrow_previous {
+    width: 22px;
+	height: 41px;
+    background: url('css_sprites.png') -2750px -1581px;
+}
+
+
+#bg-ic_close {
+    width: 35px; 
+	height: 35px;
+    background: url('css_sprites.png') -2937px -1162px;
+}
+
+
+#bg-ic_down_arrow {
+    width: 29px; 
+	height: 16px;
+    background: url('css_sprites.png') -842px -986px;
+}
+
+
+#bg-ic_facebook {
+    width: 28px;
+	height: 28px;
+    background: url('css_sprites.png') -3017px -1504px;
+}
+
+
+#bg-empty_star {
+    width: 144px; height: 144px;
+    background: url('css_sprites.png') -1805px -1308px;
+}
+
+
+#bg-grid_arrow {
+    width: 51px; height: 51px;
+    background: url('css_sprites.png') -2608px -1581px;
+}
+
+
+/* #bg-ic_close {
+    width: 150px; height: 150px;
+    background: url('css_sprites.png') -1642px -1138px;
+	
+} */
+
+
+#bg-ic_en {
+    width: 40px; height: 40px;
+    background: url('css_sprites.png') -3065px -1334px;
+}
+
+
+#bg-ic_googleplay {
+    width: 138px; height: 50px;
+    background: url('css_sprites.png') -2937px -1092px;
+}
+
+
+#bg-ic_appstore {
+    width: 131px; height: 49px;
+    background: url('css_sprites.png') -2547px -1504px;
+}
+
+
+#bg-ic_instagram {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -3065px -1504px;
+}
+
+
+#bg-ic_playlist {
+    width: 24px; height: 25px;
+    background: url('css_sprites.png') -2246px -1012px;
+}
+
+
+#bg-ic_playlist {
+    width: 147px; height: 150px;
+    background: url('css_sprites.png') -1638px -1308px;
+}
+
+
+#bg-ic_play_orange {
+    width: 136px; height: 137px;
+    background: url('css_sprites.png') -2133px -1308px;
+}
+
+
+#bg-ic_play_orange {
+    width: 134px; height: 133px;
+    background: url('css_sprites.png') -1624px -1478px;
+}
+
+
+#bg-ic_select_arrow {
+    width: 20px; height: 11px;
+    background: url('css_sprites.png') -1504px -1635px;
+}
+
+
+#bg-ic_select_arrow_hover {
+    width: 20px; height: 11px;
+    background: url('css_sprites.png') -1544px -1635px;
+}
+
+
+#bg-ic_share {
+    width: 30px; height: 29px;
+    background: url('css_sprites.png') -2967px -1504px;
+}
+
+
+#bg-ic_share {
+    width: 154px; height: 150px;
+    background: url('css_sprites.png') -1468px -1138px;
+}
+
+
+#bg-ic_star {
+    width: 17px; height: 16px;
+    background: url('css_sprites.png') -891px -986px;
+}
+
+
+#bg-ic_star_grey {
+    width: 15px; height: 15px;
+    background: url('css_sprites.png') -928px -986px;
+}
+
+
+#bg-ic_twitter {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -2833px -1581px;
+}
+
+
+#bg-ic_user_darrow {
+    width: 9px; height: 4px;
+    background: url('css_sprites.png') -3095px -1138px;
+}
+
+
+#bg-ic_user_darrow_orange {
+    width: 9px; height: 4px;
+    background: url('css_sprites.png') -1761px -984px;
+}
+
+
+#bg-ic_user_menu {
+    width: 54px; height: 53px;
+    background: url('css_sprites.png') -2534px -1581px;
+}
+
+
+#bg-placeholder_214214 {
+    width: 812px; height: 812px;
+    background: url('css_sprites.png') -10px -838px;
+}
+
+
+#bg-full_star {
+    width: 144px; height: 144px;
+    background: url('css_sprites.png') -1969px -1308px;
+}
+
+
+.bg-grid_arrow_orange {
+    width: 51px; height: 51px;
+    background: url('css_sprites.png') -2679px -1581px;
+}
+
+
+#bg-ic_play {
+    width: 136px; height: 137px;
+    background: url('css_sprites.png') -1468px -1478px;
+}
+
+
+#bg-ic_play {
+    width: 134px; height: 133px;
+    background: url('css_sprites.png') -1778px -1478px;
+}
+
+
+#bg-placeholder_carousel {
+    width: 812px; height: 812px;
+    background: url('css_sprites.png') -1468px -10px;
+}
+
+
+#bg-placeholder_1082431 {
+    width: 1126px; height: 540px;
+    background: url('css_sprites.png') -10px -1670px;
+}
+
+
+#bg-placeholderB_slider {
+    width: 812px; height: 812px;
+    background: url('css_sprites.png') -2300px -10px;
+}
+
+
+#bg-placeholderA_slider2 {
+    width: 1126px; height: 540px;
+    background: url('css_sprites.png') -1156px -1670px;
+}
+
+
+#bg-placeholderA_slider {
+    width: 1126px; height: 540px;
+    background: url('css_sprites.png') -10px -2230px;
+}
+
+
+#bg-twitter {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -3010px -842px;
+}
+
+
+#bg-facebook {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -3010px -962px;
+}
+
+
+#bg-copy_link {
+    width: 30px; height: 30px;
+    background: url('css_sprites.png') -3065px -1454px;
+}
+
+
+#bg-ic_facebook {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -2881px -1581px;
+}
+
+
+#bg-ic_twitter {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -2929px -1581px;
+}
+
+
+#bg-ic_instagram {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -2977px -1581px;
+}
+
+
+#bg-ic_appstore {
+    width: 131px; height: 49px;
+    background: url('css_sprites.png') -2698px -1504px;
+}
+
+
+#bg-ic_googleplay {
+    width: 138px; height: 50px;
+    background: url('css_sprites.png') -2920px -1217px;
+}
+
+
+#bg-ic_menu {
+    width: 205px; height: 150px;
+    background: url('css_sprites.png') -2840px -1334px;
+}
+
+
+#bg-ic_ar {
+    width: 150px; height: 150px;
+    background: url('css_sprites.png') -1812px -1138px;
+}
+
+
+#bg-ic_logo {
+    width: 300px; height: 106px;
+    background: url('css_sprites.png') -1468px -1012px;
+}
+
+
+#bg-ic_en {
+    width: 40px; height: 40px;
+    background: url('css_sprites.png') -3065px -1394px;
+}
+
+
+#bg-ic_ar {
+    width: 40px; height: 40px;
+    background: url('css_sprites.png') -2849px -1504px;
+}
+
+
+#bg-ic_search {
+    width: 27px; height: 24px;
+    background: url('css_sprites.png') -3022px -1287px;
+}
+
+
+#bg-ic_search {
+    width: 27px; height: 24px;
+    background: url('css_sprites.png') -3069px -1287px;
+}
+
+
+#bg-ic_user {
+    width: 38px; height: 38px;
+    background: url('css_sprites.png') -2909px -1504px;
+}
+
+
+#bg-ic_user {
+    width: 150px; height: 150px;
+    background: url('css_sprites.png') -1982px -1138px;
+}
+
+
+#bg-logo_01 {
+    width: 273px; height: 150px;
+    background: url('css_sprites.png') -2547px -1334px;
+}
+
+
+#bg-ic_en {
+    width: 150px; height: 150px;
+    background: url('css_sprites.png') -1468px -1308px;
+}
+
+
+#bg-ic_logo_nov {
+    width: 300px; height: 122px;
+    background: url('css_sprites.png') -1761px -842px;
+}
+
+
+#bg-head {
+    width: 600px; height: 97px;
+    background: url('css_sprites.png') -2300px -1217px;
+}
+
+
+#bg-tw_ico {
+    width: 23px; height: 22px;
+    background: url('css_sprites.png') -2208px -1070px;
+}
+
+
+#bg-fb_ico {
+    width: 23px; height: 22px;
+    background: url('css_sprites.png') -2251px -1070px;
+}
+
+
+#bg-inst_ico {
+    width: 23px; height: 22px;
+    background: url('css_sprites.png') -2228px -1478px;
+}
+
+
+#bg-content {
+    width: 443px; height: 230px;
+    background: url('css_sprites.png') -2300px -842px;
+}
+
+
+#bg-ic_delete {
+    width: 16px; height: 15px;
+    background: url('css_sprites.png') -1468px -1635px;
+}
+
+
+#bg-ic_star_light_grey {
+    width: 15px; height: 15px;
+    background: url('css_sprites.png') -963px -986px;
+}
+
+
+#bg-ic_star_orange {
+    width: 15px; height: 15px;
+    background: url('css_sprites.png') -998px -986px;
+}
+
+
+#bg-ic_star_white {
+    width: 15px; height: 15px;
+    background: url('css_sprites.png') -1033px -986px;
+}
+
+
+#bg-overlay_bg {
+    width: 1438px; height: 808px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+
+#bg-tailor_genre4 {
+    width: 128px; height: 128px;
+    background: url('css_sprites.png') -2152px -1138px;
+}
+
+
+#bg-ic_checked_genre {
+    width: 32px; height: 32px;
+    background: url('css_sprites.png') -3044px -1162px;
+}
+
+
+#bg-tailor_genre2 {
+    width: 128px; height: 128px;
+    background: url('css_sprites.png') -1932px -1478px;
+}
+
+
+#bg-tailor_genre6 {
+    width: 128px; height: 128px;
+    background: url('css_sprites.png') -2080px -1478px;
+}
+
+
+#bg-tailor_genre7 {
+    width: 128px; height: 128px;
+    background: url('css_sprites.png') -842px -838px;
+}
+
+
+#bg-ic_checked_movie {
+    width: 62px; height: 62px;
+    background: url('css_sprites.png') -2300px -1581px;
+}
+
+
+#bg-tailor_genre5 {
+    width: 128px; height: 128px;
+    background: url('css_sprites.png') -990px -838px;
+}
+
+
+#bg-tailor_movie2 {
+    width: 227px; height: 227px;
+    background: url('css_sprites.png') -2763px -842px;
+}
+
+
+#bg-tailor_movie1 {
+    width: 227px; height: 227px;
+    background: url('css_sprites.png') -2300px -1334px;
+}
+
+
+#bg-tailor_genre3 {
+    width: 128px; height: 128px;
+    background: url('css_sprites.png') -1138px -838px;
+}
+
+
+#bg-tailor_genre1 {
+    width: 128px; height: 128px;
+    background: url('css_sprites.png') -1286px -838px;
+}
+
+
+#bg-ic_facebook {
+    width: 18px; height: 38px;
+    background: url('css_sprites.png') -2208px -1012px;
+}
+
+
+#bg-ic_twitter {
+    width: 34px; height: 27px;
+    background: url('css_sprites.png') -2920px -1287px;
+}
+
+
+#bg-ic_call {
+    width: 33px; height: 45px;
+    background: url('css_sprites.png') -3078px -1217px;
+}
+
+
+#bg-devices {
+    width: 617px; height: 105px;
+    background: url('css_sprites.png') -2300px -1092px;
+}
+
+
+#bg-episodes {
+    width: 85px; height: 85px;
+    background: url('css_sprites.png') -1788px -1012px;
+}
+
+
+#bg-fullscreen_selected {
+    width: 23px; height: 17px;
+    background: url('css_sprites.png') -842px -1022px;
+}
+
+
+#bg-mute {
+    width: 28px; height: 26px;
+    background: url('css_sprites.png') -2974px -1287px;
+}
+
+
+#bg-add_playlist {
+    width: 85px; height: 85px;
+    background: url('css_sprites.png') -1893px -1012px;
+}
+
+
+#bg-back {
+    width: 32px; height: 33px;
+    background: url('css_sprites.png') -2992px -1162px;
+}
+
+
+#bg-add_playlist_selected {
+    width: 85px; height: 85px;
+    background: url('css_sprites.png') -1998px -1012px;
+}
+
+
+#bg-pause {
+    width: 11px; height: 22px;
+    background: url('css_sprites.png') -1434px -881px;
+}
+
+
+#bg-pause_selected {
+    width: 11px; height: 22px;
+    background: url('css_sprites.png') -1434px -923px;
+}
+
+
+#bg-play_icon {
+    width: 13px; height: 23px;
+    background: url('css_sprites.png') -3096px -1162px;
+}
+
+
+#bg-play_icon_selected {
+    width: 13px; height: 23px;
+    background: url('css_sprites.png') -1434px -838px;
+}
+
+
+#bg-share {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -3025px -1581px;
+}
+
+
+#bg-share_selected {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -3070px -1581px;
+}
+
+
+#bg-remove_playlist_selected {
+    width: 56px; height: 56px;
+    background: url('css_sprites.png') -2382px -1581px;
+}
+
+
+#bg-remove_playlist {
+    width: 56px; height: 56px;
+    background: url('css_sprites.png') -2458px -1581px;
+}
+
+
+#bg-volume {
+    width: 17px; height: 26px;
+    background: url('css_sprites.png') -3095px -1092px;
+}
+
+
+#bg-z5_player_overlay {
+    width: 273px; height: 150px;
+    background: url('css_sprites.png') -1468px -842px;
+}
+
+
+#bg-fullscreen {
+    width: 23px; height: 17px;
+    background: url('css_sprites.png') -885px -1022px;
+}
+
+
+#bg-episodes_selected {
+    width: 85px; height: 85px;
+    background: url('css_sprites.png') -2103px -1012px;
+}
+
+
+#bg-z5_player_overlay {
+    width: 184px; height: 115px;
+    background: url('css_sprites.png') -2081px -842px;
+}
