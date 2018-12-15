@@ -1,0 +1,20 @@
+{
+  "name": "PNG_POC.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.2.0",
+    "install": "^0.12.2",
+    "node-sprite": "^0.1.2",
+    "node-sprite-generator": "^0.10.2",
+    "npm": "^6.5.0",
+    "sprity": "^1.0.8"
+  }
+}
