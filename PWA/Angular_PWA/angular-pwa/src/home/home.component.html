@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Home Component {{name}}
+  </h1>
+  <span>Address is  {{address}}</span><br />
+  <span>landmark is  {{landmark}}</span><br />
+  <span>Street is  {{street}}</span><br />
+  <label for="address">Change Address </label><br />
+  <input id="address" name="add" class="address-style" type="text" [(ngModel)]="add" /><br  />
+  <!-- <button (click)="handleAddButton()">Click Me</button><br  /> -->
+  <button (click)="handleInputs()">Click Me</button><br  />
+  <label for="landmark">Change LandMark </label><br />
+  <input id="landmark"  name="land" class="landmark-style" type="text" [(ngModel)]="land" /><br />
+  <!-- <button (click)="handleLandButton()">Click Me</button> -->
+  <button (click)="handleInputs()">Click Me</button><br /><br />
+  <label for="street">Change Street </label><br />
+  <input id="street"  name="street" class="street-style" type="text" (change)="handleStreet($event)" /><br />
