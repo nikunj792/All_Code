@@ -1,0 +1,1368 @@
+@-webkit-keyframes scroll-slow {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes scroll-slow {
+  0% {
+    
+    -webkit-transform: translateX(0%);
+    
+    transform: translateX(0%);
+  }
+  100% {
+    
+    -webkit-transform: translateX(-100%);
+    
+    transform: translateX(-100%);
+  }
+}
+
+#videoDiv[_ngcontent-c31] {
+  
+  -webkit-user-select: none;
+  
+  -moz-user-select: none;
+  
+  -ms-user-select: none;
+  
+  user-select: none;
+  
+  cursor: default;
+}
+.tooltipVideo[_ngcontent-c31] {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltipVideo[_ngcontent-c31]   .tooltiptext[_ngcontent-c31] {
+  visibility: hidden;
+  
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 155%;
+  
+  transition: opacity 0.3s;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.tooltipVideo[_ngcontent-c31]   .tooltiptext[_ngcontent-c31]   .thumbnailImage[_ngcontent-c31] {
+  
+  max-width: 158px;
+  max-height: 90px;
+}
+.tooltipVideo[_ngcontent-c31]   .tooltiptext[_ngcontent-c31]   span[_ngcontent-c31] {
+  text-align: center;
+  font-size: 12.455px;
+  font-family: 'Roboto';
+  font-weight: 800;
+  display: block;
+  line-height: 16px;
+}
+.tooltipVideo[_ngcontent-c31]   .tooltiptext[_ngcontent-c31]::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000000 transparent transparent transparent;
+}
+.progressHead[_ngcontent-c31]:before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  bottom: -30px;
+  left: -10px;
+  right: -10px;
+}
+
+
+
+.selectedText[_ngcontent-c31] {
+  color: #b80067;
+}
+.occupyAvailableSpace[_ngcontent-c31] {
+  width: 100%;
+  height: 100%;
+}
+#videoDiv[_ngcontent-c31]   .captionator-cue-canvas[_ngcontent-c31] {
+  font-size: 14px;
+}
+
+
+
+
+.hideComponent[_ngcontent-c31] {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  
+  .PlayerContainer[_ngcontent-c31] {
+    overflow: hidden;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader[_ngcontent-c31] {
+    
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader.buffer[_ngcontent-c31] {
+    width: calc(100%*100/970) !important;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader.error[_ngcontent-c31]   p[_ngcontent-c31] {
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31] {
+    height: calc(100%*110/546) !important;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31] {
+    width: calc(100%) !important;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .titleTextPortrait[_ngcontent-c31] {
+    position: absolute;
+    width: calc(100%*707/970);
+    
+    height: calc(100%);
+    left: calc(100%*21/970);
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .titleTextPortrait.withBackRoute[_ngcontent-c31] {
+    left: calc(100%*86/970);
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .titleTextPortrait[_ngcontent-c31]   p[_ngcontent-c31] {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-weight: 400;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 0.01em;
+    height: auto !important;
+    font-size: 14px !important;
+    line-height: 18px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .backRouteIcon[_ngcontent-c31] {
+    height: calc(100%*86/110);
+    position: absolute;
+    width: calc(100%*86/970);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .backRouteIcon[_ngcontent-c31]:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .backRouteIcon[_ngcontent-c31]   .backRoute[_ngcontent-c31] {
+    width: 100%;
+    
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .castControlIcon[_ngcontent-c31] {
+    width: calc(100%*86/970);
+    height: calc(100%*86/110);
+    right: calc(100%*86/970);
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    
+    
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .castControlIcon[_ngcontent-c31]:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .shareControlIcon[_ngcontent-c31] {
+    width: calc(100%*86/970);
+    height: calc(100%*86/110);
+    right: calc(0%);
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .shareControlIcon[_ngcontent-c31]:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .shareControlIcon[_ngcontent-c31]   .shareIcon[_ngcontent-c31] {
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   #shareOptions[_ngcontent-c31] {
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: 1;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31] {
+    
+    height: calc(100%*326/546) !important;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31] {
+    height: calc(100%*110/546) !important;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .controlsBackground[_ngcontent-c31] {
+    
+    height: calc(100%*99.5/110) !important;
+    
+    top: calc(100%*10.5/110) !important;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31] {
+    height: calc(100%*24/110) !important;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31]   .progressBar[_ngcontent-c31] {
+    height: calc(100%*3/24) !important;
+    top: calc(100%*10.5/24) !important;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31]   .progressHead[_ngcontent-c31] {
+    width: calc(100%*24/970) !important;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31] {
+    
+    height: calc(100%*86/110) !important;
+    
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .controlIconPlay[_ngcontent-c31] {
+    width: calc(100%*86/970) !important;
+    height: calc(100%) !important;
+    
+    position: relative;
+    float: left;
+    margin-left: calc(100%*4/970) !important;
+    margin-right: calc(100%*4/970) !important;
+    display: flex;
+    align-items: center;
+    
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .controlIconPlay[_ngcontent-c31]:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .controlIconVolume[_ngcontent-c31] {
+    width: calc(100%*86/970) !important;
+    height: calc(100%) !important;
+    
+    position: relative;
+    float: left;
+    margin-left: calc(100%*4/970) !important;
+    margin-right: calc(100%*4/970) !important;
+    display: flex;
+    align-items: center;
+    
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .controlIconVolume[_ngcontent-c31]:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .timeLapseMobile[_ngcontent-c31] {
+    
+    width: calc(100%*676/970) !important;
+    height: calc(100%) !important;
+    
+    position: relative;
+    float: left;
+    margin-left: calc(100%*12/970) !important;
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .timeLapseMobile[_ngcontent-c31]   .live[_ngcontent-c31] {
+    float: left;
+    background: #bf006b;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: calc(100%*14/676) !important;
+    height: calc(100%*14/86) !important;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .timeLapseMobile[_ngcontent-c31]   p[_ngcontent-c31] {
+    float: left;
+    font-size: 14px !important;
+    line-height: 18px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .controlIconFullscreen[_ngcontent-c31] {
+    width: calc(100%*86/970) !important;
+    height: calc(100%) !important;
+    right: calc(0%) !important;
+    position: absolute;
+    margin-left: calc(100%*4/970) !important;
+    margin-right: calc(100%*4/970) !important;
+    display: flex;
+    align-items: center;
+    
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .controlIconFullscreen[_ngcontent-c31]   .expandScreen[_ngcontent-c31] {
+    width: 65%;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .controlIconFullscreen[_ngcontent-c31]:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+.fullscreenOverlay[_ngcontent-c31] {
+  position: fixed !important;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.castZIndex[_ngcontent-c31] {
+  z-index: 9;
+}
+
+
+
+.PlayerContainer[_ngcontent-c31] {
+  width: calc(100%);
+  height: calc(100%);
+  
+  
+  position: relative;
+  -webkit-user-select: none;
+  
+  -moz-user-select: none;
+  
+  -ms-user-select: none;
+  
+  user-select: none;
+  
+  overflow: hidden;
+  
+  
+}
+.PlayerContainer[_ngcontent-c31]   .newReplay[_ngcontent-c31] {
+  
+  height: calc(100%*80/546);
+  width: calc(100%*80/970);
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.PlayerContainer[_ngcontent-c31]   .newReplay[_ngcontent-c31]   .watched[_ngcontent-c31] {
+  
+  
+  width: calc(100%);
+  height: calc(100%);
+  display: inline-flex;
+}
+.PlayerContainer[_ngcontent-c31]   .newReplay[_ngcontent-c31]   .watched[_ngcontent-c31]:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+}
+.PlayerContainer[_ngcontent-c31]   .newReplay[_ngcontent-c31]   .watched[_ngcontent-c31]   .starting[_ngcontent-c31] {
+  
+  width: calc(100%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31] {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100%);
+  height: calc(100%);
+  
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader[_ngcontent-c31] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader.buffer[_ngcontent-c31] {
+  width: calc(100%*60/970);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader.replay[_ngcontent-c31] {
+  
+  width: calc(100%*60/970);
+  z-index: 1;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader.replay[_ngcontent-c31]:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader.play[_ngcontent-c31] {
+  width: calc(100%*120/970);
+  
+  z-index: 1;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader.play[_ngcontent-c31]:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader.error[_ngcontent-c31] {
+  width: calc(100%);
+  height: calc(20%);
+  color: white;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .loader.error[_ngcontent-c31]   .resetButton[_ngcontent-c31] {
+  font-size: 14px;
+  color: #eeeeee;
+  background-color: #bf006b;
+  padding: 8px;
+  margin: 10px;
+  line-height: 20px;
+  outline: 0;
+  border-radius: 3px;
+  border: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  pointer-events: visible;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31] {
+  position: absolute;
+  top: calc(100%*64/546);
+  
+  right: calc(100%*21/970);
+  text-align: center;
+  background: #1b0f1e;
+  height: calc(100%*81/546);
+  
+  z-index: 1;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu.Live[_ngcontent-c31] {
+  height: calc(100%*40/546);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu.Live.showShare[_ngcontent-c31] {
+  height: calc(100%*81/546);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu.Vod.showShare[_ngcontent-c31] {
+  height: calc(100%*122/546);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption[_ngcontent-c31] {
+  
+  position: absolute;
+  width: 100%;
+  background: #060107;
+  height: calc(100%*40/81);
+  
+  font-size: 1em;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.Live[_ngcontent-c31] {
+  height: calc(100%);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.showShare[_ngcontent-c31] {
+  height: calc(100%*40/122);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption[_ngcontent-c31]:hover {
+  cursor: pointer;
+  background: #2a212c;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.watchLater[_ngcontent-c31] {
+  top: calc(100%*0/122);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.watchLater.showShare[_ngcontent-c31] {
+  top: calc(100%*0/163);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.share[_ngcontent-c31] {
+  top: calc(100%*41/81);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.share.Live[_ngcontent-c31] {
+  
+  top: calc(100%*0/40);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.share.Live.showShare[_ngcontent-c31] {
+  height: calc(100%*40/81);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.share.Vod.showShare[_ngcontent-c31] {
+  top: calc(100%*41/122);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.shareOption[_ngcontent-c31] {
+  top: calc(100%*82/122);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.shareOption[_ngcontent-c31]:hover {
+  cursor: pointer;
+  background: #060107;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.shareOption.Live[_ngcontent-c31] {
+  top: calc(100%*41/81);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption.shareOption.Live.showShare[_ngcontent-c31] {
+  height: calc(100%*40/81);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption[_ngcontent-c31]   .menuIconBlock[_ngcontent-c31] {
+  
+  position: absolute;
+  width: calc(100%*40/192);
+  height: calc(100%);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption[_ngcontent-c31]   .menuIconBlock[_ngcontent-c31]   .menuIcon[_ngcontent-c31] {
+  
+  width: calc(100%*20/40);
+  height: calc(100%*20/40);
+  position: absolute;
+  top: calc(100%*10/40);
+  left: calc(100%*10/40);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption[_ngcontent-c31]   .menuIconTextBlock[_ngcontent-c31] {
+  
+  position: absolute;
+  font-size: 1em;
+  width: calc(100%*152/192);
+  height: calc(100%);
+  left: calc(100%*40/192);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .moreMenu[_ngcontent-c31]   .menuOption[_ngcontent-c31]   .menuIconTextBlock[_ngcontent-c31]   .menuText[_ngcontent-c31] {
+  width: 100%;
+  
+  position: absolute;
+  
+  font-size: 1em;
+  padding-left: calc(100%*4/152);
+  text-align: left;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-style: normal;
+  font-family: 'Roboto';
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: visible;
+  text-overflow: ellipsis;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .ccPlayerText[_ngcontent-c31] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  
+  height: 10%;
+  
+  font-family: 'Roboto';
+  font-weight: 400;
+  visibility: visible;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31] {
+  width: calc(100%);
+  height: calc(100%*77/546);
+  
+  position: relative;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31] {
+  
+  width: calc(100%*788/970);
+  height: calc(100%);
+  
+  
+  position: absolute;
+  
+  
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .titleText[_ngcontent-c31] {
+  
+  
+  width: calc(100%*767/788);
+  height: calc(100%*22/77);
+  
+  
+  
+  top: calc(100%*27/77);
+  
+  position: absolute;
+  margin-left: calc(100%*21/788);
+  
+  
+  
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerTitle[_ngcontent-c31]   .titleText[_ngcontent-c31]   p[_ngcontent-c31] {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  
+  
+  width: 100%;
+  height: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0.01em;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerHeaderRightControlsCastDisabled[_ngcontent-c31] {
+  
+  
+  position: absolute;
+  width: calc(100%*49/970);
+  height: calc(100%);
+  display: inline-flex;
+  right: 0;
+  
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerHeaderRightControlsCastDisabled[_ngcontent-c31]   .controlIcon[_ngcontent-c31] {
+  
+  display: inline-flex;
+  width: calc(100%*44/49);
+  height: calc(100%*44/77);
+  
+  
+  
+  position: absolute;
+  top: calc(100%*11/77);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerHeaderRightControlsCastDisabled[_ngcontent-c31]   .controlIcon[_ngcontent-c31]:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerHeaderRightControlsCastDisabled[_ngcontent-c31]   .menuCtrl[_ngcontent-c31] {
+  
+  position: absolute;
+  
+  margin-left: calc(100%*4/49);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerHeaderRightControlsCastEnabled[_ngcontent-c31] {
+  
+  
+  width: calc(100%*116/970);
+  height: calc(100%);
+  
+  position: absolute;
+  right: 0;
+  
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerHeaderRightControlsCastEnabled[_ngcontent-c31]   .controlIcon[_ngcontent-c31] {
+  
+  
+  width: calc(100%*44/116);
+  height: calc(100%*44/77);
+  margin-right: calc(100%*1/116);
+  
+  
+  position: relative;
+  top: calc(100%*11/77);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerHeaderRightControlsCastEnabled[_ngcontent-c31]   .controlIcon[_ngcontent-c31]:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerHeaderRightControlsCastEnabled[_ngcontent-c31]   .castCtrl[_ngcontent-c31] {
+  
+  position: absolute;
+  
+  margin-left: calc(100%*22/116);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerHeaderBar[_ngcontent-c31]   .playerHeaderRightControlsCastEnabled[_ngcontent-c31]   .menuCtrl[_ngcontent-c31] {
+  
+  position: absolute;
+  
+  left: calc(100%*67/116);
+  margin-left: calc(100%*4/116);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31] {
+  width: calc(100%);
+  height: calc(100%*403.5/546);
+  
+  
+  position: relative;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .infoTextSection[_ngcontent-c31] {
+  width: calc(100%);
+  height: calc(100%);
+  
+  display: inline-flex;
+  position: absolute;
+  
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .infoTextSection[_ngcontent-c31]   .infoText[_ngcontent-c31] {
+  color: #ffffff;
+  width: calc(100%*932/970);
+  height: calc(100%*395/403.5);
+  
+  
+  
+  position: relative;
+  top: calc(100%*4/403.5);
+  margin-left: calc(100%*21/970);
+  
+  
+  line-height: 1.714em;
+  letter-spacing: 0.01em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  overflow: hidden;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31] {
+  
+  width: calc(100%*331/970);
+  height: calc(100%);
+  display: inline-flex;
+  position: absolute;
+  
+  right: 0;
+  font-family: 'Roboto';
+  font-weight: 400;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31] {
+  width: calc(100%*310/331);
+  height: calc(100%*395/403.5);
+  
+  
+  position: relative;
+  top: calc(100%*4/403.5);
+  
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .ccWindow[_ngcontent-c31] {
+  width: calc(100%*200/310);
+  
+  
+  background: #1b0f1e;
+  bottom: 0;
+  position: absolute;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .ccWindow[_ngcontent-c31]   .ccOption[_ngcontent-c31] {
+  width: 100%;
+  
+  
+  background: #060107;
+  
+  border-bottom-style: solid;
+  border-bottom-color: #1b0f1e;
+  position: relative;
+  font-size: 1em;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .ccWindow[_ngcontent-c31]   .ccOption[_ngcontent-c31]:hover {
+  cursor: pointer;
+  background: #2a212c;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .ccWindow[_ngcontent-c31]   .ccOption[_ngcontent-c31]   .controlSection[_ngcontent-c31] {
+  position: absolute;
+  width: calc(100%*37/200);
+  height: calc(100%);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .ccWindow[_ngcontent-c31]   .ccOption[_ngcontent-c31]   .controlSection[_ngcontent-c31]   .menuCtrlIcon[_ngcontent-c31] {
+  width: calc(100%*24/37);
+  height: calc(100%*24/40);
+  
+  margin-left: calc(100%*4/37);
+  
+  position: relative;
+  top: calc(100%*8/40);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .ccWindow[_ngcontent-c31]   .ccOption[_ngcontent-c31]   .textSection[_ngcontent-c31] {
+  width: calc(100%*149/200);
+  height: 100%;
+  
+  font-size: 1em;
+  position: absolute;
+  margin-left: calc(100%*37/200);
+  color: #ffffff;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .ccWindow[_ngcontent-c31]   .ccOption[_ngcontent-c31]   .textSection[_ngcontent-c31]   .textBlock[_ngcontent-c31] {
+  
+  font-size: 1em;
+  width: calc(100%);
+  height: calc(100%*14/40);
+  
+  position: relative;
+  top: calc(100%*13/40);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .ccWindow[_ngcontent-c31]   .ccOption[_ngcontent-c31]   .textSection[_ngcontent-c31]   .subTitlesText[_ngcontent-c31] {
+  width: calc(100%*105/149);
+  height: 100%;
+  
+  font-size: 1em;
+  position: absolute;
+  
+  color: #ffffff;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .ccWindow[_ngcontent-c31]   .ccOption[_ngcontent-c31]   .textSection[_ngcontent-c31]   .subTitlesText[_ngcontent-c31]   .textBlock[_ngcontent-c31] {
+  
+  font-size: 1em;
+  width: calc(100%);
+  height: calc(100%*14/40);
+  
+  position: relative;
+  top: calc(100%*13/40);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .ccWindow[_ngcontent-c31]   .ccOption[_ngcontent-c31]   .textSection[_ngcontent-c31]   .toggleMenu[_ngcontent-c31] {
+  width: calc(100%*44/149);
+  height: calc(100%*22/40);
+  position: absolute;
+  
+  top: calc(100%*9/40);
+  right: 0;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31] {
+  width: calc(100%*200/310);
+  
+  
+  background: #1b0f1e;
+  bottom: 0;
+  position: absolute;
+  
+  margin-left: calc(100%*81/310);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsControls[_ngcontent-c31] {
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsControls[_ngcontent-c31]   .settingsControlOption[_ngcontent-c31] {
+  
+  width: 100%;
+  font-size: 1em;
+  background: #060107;
+  
+  
+  
+  border-bottom-style: solid;
+  border-bottom-color: #1b0f1e;
+  position: relative;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsControls[_ngcontent-c31]   .settingsControlOption[_ngcontent-c31]:hover {
+  cursor: pointer;
+  background: #2a212c;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsControls[_ngcontent-c31]   .settingsControlOption[_ngcontent-c31]   .textSection[_ngcontent-c31] {
+  width: calc(100%*129/200);
+  height: 100%;
+  
+  font-size: 1em;
+  position: absolute;
+  margin-left: calc(100%*13/200);
+  color: #ffffff;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsControls[_ngcontent-c31]   .settingsControlOption[_ngcontent-c31]   .textSection[_ngcontent-c31]   .textBlock[_ngcontent-c31] {
+  
+  font-size: 1em;
+  width: calc(100%);
+  height: calc(100%*14/40);
+  
+  position: relative;
+  
+  top: calc(100%*18/50);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsControls[_ngcontent-c31]   .settingsControlOption[_ngcontent-c31]   .controlSection[_ngcontent-c31] {
+  position: absolute;
+  width: calc(100%*53/200);
+  height: calc(100%);
+  margin-left: calc(100%*142/200);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsControls[_ngcontent-c31]   .settingsControlOption[_ngcontent-c31]   .controlSection[_ngcontent-c31]   .menuCtrlIcon[_ngcontent-c31] {
+  width: calc(100%*24/53);
+  height: calc(100%*22/50);
+  
+  right: 0;
+  position: absolute;
+  
+  top: calc(100%*13/50);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsControls[_ngcontent-c31]   .settingsControlOption[_ngcontent-c31]   .controlSection[_ngcontent-c31]   .toggleMenu[_ngcontent-c31] {
+  width: calc(100%*44/53);
+  height: calc(100%*22/50);
+  position: absolute;
+  
+  top: calc(100%*14/50);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31] {
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: scrollbar;
+  scrollbar-track-color: #333;
+  scrollbar-base-width: 4px;
+  scrollbar-base-color: #5f4e62;
+  scrollbar-highlight-color: #333;
+  scrollbar-arrow-color: #333;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31]::-webkit-scrollbar {
+  width: 3px;
+  background-color: #333;
+  opacity: 10%;
+  cursor: pointer;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31]::-webkit-scrollbar-thumb {
+  background: #5f4e62;
+  width: 4px;
+  cursor: pointer;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31]   .settingsListOption[_ngcontent-c31] {
+  width: 100%;
+  
+  
+  background: #060107;
+  
+  border-bottom-style: solid;
+  border-bottom-color: #1b0f1e;
+  position: relative;
+  font-size: 1em;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31]   .settingsListOption[_ngcontent-c31]:hover {
+  cursor: pointer;
+  background: #2a212c;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31]   .settingsListOption[_ngcontent-c31]   .controlSection[_ngcontent-c31] {
+  position: absolute;
+  width: calc(100%*37/200);
+  height: calc(100%);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31]   .settingsListOption[_ngcontent-c31]   .controlSection[_ngcontent-c31]   .menuCtrlIcon[_ngcontent-c31] {
+  width: calc(100%*24/37);
+  height: calc(100%*24/40);
+  
+  margin-left: calc(100%*4/37);
+  
+  position: relative;
+  top: calc(100%*8/40);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31]   .settingsListOption[_ngcontent-c31]   .textSection[_ngcontent-c31] {
+  width: calc(100%*149/200);
+  height: 100%;
+  
+  font-size: 1em;
+  position: absolute;
+  margin-left: calc(100%*37/200);
+  color: #ffffff;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31]   .settingsListOption[_ngcontent-c31]   .textSection[_ngcontent-c31]   .textBlock[_ngcontent-c31] {
+  
+  font-size: 1em;
+  width: calc(100%);
+  height: calc(100%*14/40);
+  
+  position: relative;
+  top: calc(100%*13/40);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31]   .settingsListOption[_ngcontent-c31]   .textSection[_ngcontent-c31]   .textBlock[_ngcontent-c31]   .qualityRes[_ngcontent-c31] {
+  font-size: 1em;
+  float: left;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerInfoSection[_ngcontent-c31]   .popUpsSection[_ngcontent-c31]   .popUpBlock[_ngcontent-c31]   .settingsWindow[_ngcontent-c31]   .settingsListOptions[_ngcontent-c31]   .settingsListOption[_ngcontent-c31]   .textSection[_ngcontent-c31]   .textBlock[_ngcontent-c31]   .qualityResValue[_ngcontent-c31] {
+  font-size: 1em;
+  float: right;
+  width: 60%;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31] {
+  width: calc(100%);
+  
+  height: calc(100%*65.5/546);
+  
+  
+  position: relative;
+  
+  
+  
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .controlsBackground[_ngcontent-c31] {
+  width: 100%;
+  height: calc(100%*60/65.5);
+  position: absolute;
+  
+  top: calc(100%*5.5/65.5);
+  background: rgba(0, 0, 0, 0.4);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31] {
+  width: calc(100%);
+  height: calc(100%*14/65.5);
+  
+  position: relative;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31]   .progressBar[_ngcontent-c31] {
+  width: 100%;
+  height: calc(100%*3/14);
+  
+  background: rgba(255, 255, 255, 0.2);
+  
+  top: calc(100%*5.5/14);
+  
+  position: absolute;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31]   .progressBar[_ngcontent-c31]   .progressBuffer[_ngcontent-c31] {
+  background: #bdbdbd;
+  
+  height: calc(100%);
+  position: absolute;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31]   .progressBar[_ngcontent-c31]   .progressSeek[_ngcontent-c31] {
+  background: #bf006b;
+  
+  height: calc(100%);
+  
+  position: absolute;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31]   .progressBar[_ngcontent-c31]   .adProgressBar[_ngcontent-c31] {
+  background: #ffea00;
+  width: calc(100%*11/970);
+  height: calc(100%);
+  position: absolute;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31]   .progressBar[_ngcontent-c31]:hover {
+  cursor: pointer;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31]   .progressHead[_ngcontent-c31] {
+  
+  background: #bf006b;
+  
+  
+  width: calc(100%*14/970);
+  height: calc(100%);
+  border-radius: 50%;
+  position: absolute;
+  
+  
+  
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .progressBackground[_ngcontent-c31]   .progressHead[_ngcontent-c31]:hover {
+  cursor: pointer;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31] {
+  width: 100%;
+  height: calc(100%*51.5/65.5);
+  
+  position: relative;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .leftControlsVod[_ngcontent-c31] {
+  width: calc(100%*180/970);
+  height: calc(100%*47/51.5);
+  
+  position: absolute;
+  
+  
+  
+  top: calc(100%*4.5/51.5);
+  
+  left: 0;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .leftControlsVod[_ngcontent-c31]   .controlIcon[_ngcontent-c31] {
+  width: calc(100%*44/180);
+  height: calc(100%*44/47);
+  display: inline-flex;
+  
+  margin-left: calc(100%*8/180);
+  margin-right: calc(100%*8/180);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .leftControlsVod[_ngcontent-c31]   .controlIcon[_ngcontent-c31]:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .leftControlsLive[_ngcontent-c31] {
+  
+  width: calc(100%*60/970);
+  height: calc(100%*47/51.5);
+  
+  position: absolute;
+  
+  
+  
+  top: calc(100%*4.5/51.5);
+  
+  left: 0;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .leftControlsLive[_ngcontent-c31]   .controlIcon[_ngcontent-c31] {
+  width: calc(100%*44/60);
+  height: calc(100%*44/47);
+  display: inline-flex;
+  
+  margin-left: calc(100%*8/60);
+  margin-right: calc(100%*8/60);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .leftControlsLive[_ngcontent-c31]   .controlIcon[_ngcontent-c31]:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31] {
+  width: calc(100%*610/970);
+  height: calc(100%*47/51.5);
+  
+  
+  
+  
+  position: absolute;
+  top: calc(100%*4.5/51.5);
+  left: calc(100%*180/970);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls.Live[_ngcontent-c31] {
+  
+  left: calc(100%*60/970);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .controlIcon[_ngcontent-c31] {
+  width: calc(100%*44/610);
+  height: calc(100%*44/47);
+  display: inline-flex;
+  
+  margin-left: calc(100%*8/610);
+  margin-right: calc(100%*8/610);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .controlIcon[_ngcontent-c31]:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .controlIcon[_ngcontent-c31] {
+  margin-right: calc(100%*2/610);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .volumeBar[_ngcontent-c31] {
+  width: calc(100%*72/610);
+  height: calc(100%*12/47);
+  
+  display: none;
+  
+  
+  top: calc(100%*17/47);
+  margin-right: calc(100%*7/610);
+  
+  
+  position: absolute;
+  left: calc(100%*55/610);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .volumeBar[_ngcontent-c31]   .volumeBackground[_ngcontent-c31] {
+  width: calc(100%);
+  height: calc(100%*3/12);
+  
+  
+  top: calc(100%*4/12);
+  
+  
+  background: #8b8589;
+  position: absolute;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .volumeBar[_ngcontent-c31]   .volumeBackground[_ngcontent-c31]   .volumeSeek[_ngcontent-c31] {
+  
+  height: calc(100%);
+  background: #ffffff;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .volumeBar[_ngcontent-c31]   .volumeHead[_ngcontent-c31] {
+  width: calc(100%*12/72);
+  height: calc(100%);
+  
+  background: #ffffff;
+  display: inline-flex;
+  border-radius: 50%;
+  position: absolute;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .volumeBar[_ngcontent-c31]   .volumeHead[_ngcontent-c31]:hover {
+  cursor: pointer;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .volumeBar[_ngcontent-c31]:hover {
+  cursor: pointer;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .timeLapse[_ngcontent-c31] {
+  width: calc(100%*97/610);
+  height: calc(100%*14/47);
+  display: inline-flex;
+  
+  
+  position: absolute;
+  top: calc(100%*15/47);
+  
+  
+  
+  left: calc(100%*62/610);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .timeLapse[_ngcontent-c31]   .live[_ngcontent-c31] {
+  width: calc(100%*14/97);
+  height: calc(100%);
+  background: #bf006b;
+  
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .midControls[_ngcontent-c31]   .timeLapse[_ngcontent-c31]   p[_ngcontent-c31] {
+  font-style: normal;
+  font-family: 'Roboto';
+  font-weight: 400;
+  text-align: left;
+  line-height: calc(100%*16.8/14);
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .rightControls[_ngcontent-c31] {
+  width: calc(100%*180/970);
+  height: calc(100%*47/51.5);
+  
+  
+  
+  
+  
+  position: relative;
+  top: calc(100%*4.5/51.5);
+  left: calc(100%*790/970);
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .rightControls[_ngcontent-c31]   .controlIcon[_ngcontent-c31] {
+  width: calc(100%*44/180);
+  height: calc(100%*44/47);
+  display: inline-flex;
+  
+  margin-left: calc(100%*8/180);
+  margin-right: calc(100%*8/180);
+  
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .rightControls[_ngcontent-c31]   .controlIcon[_ngcontent-c31]:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.PlayerContainer[_ngcontent-c31]   .playerOverlay[_ngcontent-c31]   .playerControlsBar[_ngcontent-c31]   .playerControls[_ngcontent-c31]   .rightControls[_ngcontent-c31]   .controlIcon[_ngcontent-c31]   .expandScreen[_ngcontent-c31] {
+  width: 65%;
+  top: 50%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.PlayerContainer[_ngcontent-c31]   .loader[_ngcontent-c31] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.PlayerContainer[_ngcontent-c31]   .loader.errorText[_ngcontent-c31] {
+  width: calc(100%);
+  
+  color: white;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 400;
+  
+}
+.PlayerContainer[_ngcontent-c31]   .loader.errorText[_ngcontent-c31]   p[_ngcontent-c31] {
+  font-size: 14px;
+  color: white;
+}
+.PlayerContainer[_ngcontent-c31]   .loader.errorText[_ngcontent-c31]   .launchButton[_ngcontent-c31] {
+  font-size: 14px;
+  color: #eeeeee;
+  background-color: #bf006b;
+  padding: 8px;
+  margin: 10px;
+  line-height: 20px;
+  outline: 0;
+  border-radius: 3px;
+  border: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  pointer-events: visible;
+}
+.PlayerContainer[_ngcontent-c31]   .loader.errorText[_ngcontent-c31]   .launchButton[_ngcontent-c31]:hover {
+  cursor: pointer;
+}
+.icon[_ngcontent-c31] {
+  display: inline-block;
+}
+.replay_icon[_ngcontent-c31] {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 479px) {
+  .icon[_ngcontent-c31] {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+}
+.controlIcon[_ngcontent-c31] {
+  display: flex;
+  align-items: center;
+}

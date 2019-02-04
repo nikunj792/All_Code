@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/player.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/play.css">
+    <link rel="stylesheet" href="./css/embed.css">
+    <link rel="stylesheet" href="./css/css_common.css">
+    <title>Video Player</title>
+    <style>
+        .parent{
+            border: 1px solid black;
+            background-color: blue
+        }
+        .up{
+            background: url("css_common_sprites.png") -483px -263px;
+            width: 22px;
+            height: 22px;
+            
+        }
+        .down{
+            background: url("css_common_sprites.png") -516px -263px;
+            width: 22px;
+            height: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div id="render"></div> 
+    <div class="parent">
+        <button class="up"></button>
+        <button class="down"></button>
+        <img class="visa-icon" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAA8AQMAAADlrI5dAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFo4D6AAACWAABGb4wRAAAAABJRU5ErkJggg==">
+        <img class="watch-later-icon" alt="" src="data:image/download;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsAQMAAAAkSshCAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA1JREFUeNpjYBgFpAIAATQAAUFXahMAAAAASUVORK5CYII=">  
+    </div>
+    <div id='myElement'>Loading the player...</div>
+    <button onclick="player('player','0-1-kundalibhagya-kundalibhagyaseason1-episode_1179624267')">Play Video</button>
+    <script type="text/javascript" src="http://p.jwpcdn.com/6/10/jwplayer.js"></script>
+    <script charset="utf-8" src="https://ssl.p.jwpcdn.com/player/v/8.5.6/jwplayer.core.js"></script>
+    <script charset="utf-8" src="https://ssl.p.jwpcdn.com/player/v/8.5.6/provider.hlsjs.js"></script>   
+    <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js "></script>   
+    <script charset="utf-8" src=""></script>
+    <script type="text/javascript" src="https://cdn.jwplayer.com/players/nPripu9l-ALJ3XQCI.js"></script>
+    <script src="./bundle.js"></script>
+    <script>
+        function player(divId,episodeId)
+        {
+            window.jwplayer = jwplayer;
+            let playerSetup = {
+                'playlist': 'sample.mp4',
+                'width': '100%',
+                'height': '100%',
+                'controls': 'false',
+                'autostart': 'autostart',
+                'mute': 'mute',
+                'advertising': 'this.advertisement',
+                'primary': 'html5',
+                'hlshtml': 'true',
+                'defaultBandwidthEstimate': '250000',
+                'preload': 'auto'
+            };
+            // jwplayer("myElement").setup({
+            //         "height": 360,
+            //         "width": 640,
+            //         "Access-Control-Allow-Origin":"*",
+            //         "playlist": [{
+            //                         "file": "sample.mp4",
+            //                         "image": "zee.jpg",
+            //                         "title": "Sintel Trailer",
+            //                         "mediaid": "ddra573"
+            //                     }],
+            //         "rtmp": {
+            //             "securetoken": 'abcdefg'
+            //         },
+            //         "autostart": "viewable",
+            //         "advertising": {
+            //             "client": "vast",
+            //             "tag": "http://adserver.com/vastTag.xml"
+            //         }
+            //         });
+
+            jwplayer("myElement").setup({
+                    "height": 360,
+                    "width": 640,
+                    "playlist": [{
+                                    "file": "sample.mp4",
+                                    "image": "zee.jpg",
+                                    "title": "Sintel Trailer",
+                                    "mediaid": "ddra573"
+                                }],
+                    "rtmp": {
+                        "securetoken": 'abcdefg'
+                    },
+                    "autostart": "viewable",
+                    "advertising": {
+                        "client": "vast",
+                        "tag": "http://adserver.com/vastTag.xml"
+                    }
+                    });
+            
+            // `https://www.zee5.com/embed/${episodeId}`,
+                // var div = document.createElement('iframe');
+                // div.setAttribute('id',divId);
+                // div.setAttribute('class',divId);        
+                // div.setAttribute('width','600px');
+                // div.setAttribute('height','600px');
+                // div.setAttribute('src',`https://www.zee5.com/embed/${episodeId}`);
+                // document.body.appendChild(div);
+        }
+    </script>
+
+</body>
+</html>

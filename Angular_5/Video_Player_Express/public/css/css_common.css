@@ -1,0 +1,136 @@
+.auth-device, .logo-image, .popup-outercontainer, .popup-outercontainer-right, .pwd-lock-icon, 
+.pay-success, .z5, .entertainment, .play, .play-icon, 
+.ios-appstore-icon, .android-playstore-icon, .play-news, .visa-icon, .premium-icon, 
+.go-to-top-icon, .something-wrong, .active-state, .back-icon, .bin-icon, 
+.change-language-icon, .check-box-normal, .check-box-selected, .check-box-unselected, .close-ic1, 
+.close-icon, .deactive-state, .deactive-state-icon, .downarrow-icon, .download-icon, 
+.hamburgericon, .logo, .mastercard-icon, .minus, .more-icon, 
+.plus, .search-iconm, .search-icon, .speaker-icon, .speaker-icon-selected, 
+.tvguide, .tvguideselect, .uparrow-icon, .user-icon, .watch-later-icon, 
+.prev-icon, .blank-image, .asset03, .playicon, .reminder-icon-selected, 
+.facebook-icon, .watchlater-icon-selected, .watchlater-normal, .embed-icon, .reminder-icon, 
+.reminder-selected, .email-normal, .plans-select, .plans-unselect, .sort-icon, 
+.fav-icon-normal, .fav-icon-selected, .follow-icon, .home-icon, .refine-icon, 
+.remove, .search-icon-dark, .share-icon, .threedots-icon, .triangle, 
+.tvguide-next-icon, .tvguide-prev-icon, .watch-later-icon-normal, .watch-later-icon-selected, .payment-select, 
+.payment-unselect, .search-icon, .tvguide-back-icon, .playiconpink, .right-arrow, 
+.tvguide-close-icon, .watch-now-icon, .closespotlight, .headerclose-icon, .seperator-round, 
+.ellipse-spotlight, .ellipse-spotlightselect, .down-arrow, .ellipse-normal, .ellipse-selected, 
+.left-arrow, .left-nav, .left-nav-selected, .next-arrow, .pointer, 
+.prev-arrow, .right-arrow, .right-nav, .right-nav-selected, .star-empty-icon, 
+.star-filled-icon, .up-arrow, .audio-icon, .remove-icon, .arrow-icon, 
+.description-downarrow, .description-uparrow, .next-icon, .share-arrow, .breadcrumplayer, 
+.pointer-touch
+{ max-width: 100%; background-size: 100%; background-image: url('../download.png'); }
+ 
+.auth-device { background-position: 0 0%; background-size: 100%; }
+.logo-image { background-position: 0 5.903006%; background-size: 106.686047%; }
+.popup-outercontainer { background-position: 0 10.989492%; background-size: 121.523179%; }
+.popup-outercontainer-right { background-position: 0 15.849387%; background-size: 121.523179%; }
+.pwd-lock-icon { background-position: 0 20.560748%; background-size: 158.874459%; }
+.pay-success { background-position: 0 24.461207%; background-size: 197.311828%; }
+.z5 { background-position: 0 27.21881%; background-size: 208.522727%; }
+.entertainment { background-position: 0 29.143349%; background-size: 267.883212%; }
+.play { background-position: 0 31.953925%; background-size: 359.803922%; }
+.play-icon { background-position: 0 34.129693%; background-size: 359.803922%; }
+.ios-appstore-icon { background-position: 0 35.786375%; background-size: 378.350515%; }
+.android-playstore-icon { background-position: 0 36.501262%; background-size: 382.291667%; }
+.play-news { background-position: 0 37.579618%; background-size: 458.75%; }
+.visa-icon { background-position: 0 39.112051%; background-size: 539.705882%; }
+.premium-icon { background-position: 0 40.329392%; background-size: 591.935484%; }
+.go-to-top-icon { background-position: 0 41.530979%; background-size: 601.639344%; }
+.something-wrong { background-position: 0 42.739553%; background-size: 611.666667%; }
+.active-state { background-position: 0 43.763169%; background-size: 834.090909%; }
+.back-icon { background-position: 0 44.690265%; background-size: 834.090909%; }
+.bin-icon { background-position: 0 45.617362%; background-size: 834.090909%; }
+.change-language-icon { background-position: 0 46.544458%; background-size: 834.090909%; }
+.check-box-normal { background-position: 0 47.471555%; background-size: 834.090909%; }
+.check-box-selected { background-position: 0 48.398651%; background-size: 834.090909%; }
+.check-box-unselected { background-position: 0 49.325748%; background-size: 834.090909%; }
+.close-ic1 { background-position: 0 50.252845%; background-size: 834.090909%; }
+.close-icon { background-position: 0 51.179941%; background-size: 834.090909%; }
+.deactive-state { background-position: 0 52.107038%; background-size: 834.090909%; }
+.deactive-state-icon { background-position: 0 53.034134%; background-size: 834.090909%; }
+.downarrow-icon { background-position: 0 53.961231%; background-size: 834.090909%; }
+.download-icon { background-position: 0 54.888327%; background-size: 834.090909%; }
+.hamburgericon { background-position: 0 55.815424%; background-size: 834.090909%; }
+.logo { background-position: 0 56.74252%; background-size: 834.090909%; }
+.mastercard-icon { background-position: 0 57.864693%; background-size: 834.090909%; }
+.minus { background-position: 0 58.933839%; background-size: 834.090909%; }
+.more-icon { background-position: 0 59.860936%; background-size: 834.090909%; }
+.plus { background-position: 0 60.788032%; background-size: 834.090909%; }
+.search-iconm { background-position: 0 61.715129%; background-size: 834.090909%; }
+.search-icon { background-position: 0 62.642225%; background-size: 834.090909%; }
+.speaker-icon { background-position: 0 63.569322%; background-size: 834.090909%; }
+.speaker-icon-selected { background-position: 0 64.496418%; background-size: 834.090909%; }
+.tvguide { background-position: 0 65.423515%; background-size: 834.090909%; }
+.tvguideselect { background-position: 0 66.350611%; background-size: 834.090909%; }
+.uparrow-icon { background-position: 0 67.277708%; background-size: 834.090909%; }
+.user-icon { background-position: 0 68.204804%; background-size: 834.090909%; }
+.watch-later-icon { background-position: 0 69.131901%; background-size: 834.090909%; }
+.prev-icon { background-position: 0 70%; background-size: 917.5%; }
+.blank-image { background-position: 0 70.708132%; background-size: 991.891892%; }
+.asset03 { background-position: 0 71.299601%; background-size: 1146.875%; }
+.playicon { background-position: 0 71.926875%; background-size: 1183.870968%; }
+.reminder-icon-selected { background-position: 0 72.578273%; background-size: 1183.870968%; }
+.facebook-icon { background-position: 0 73.214286%; background-size: 1223.333333%; }
+.watchlater-icon-selected { background-position: 0 73.674282%; background-size: 1310.714286%; }
+.watchlater-normal { background-position: 0 74.072521%; background-size: 1310.714286%; }
+.embed-icon { background-position: 0 74.517617%; background-size: 1359.259259%; }
+.reminder-icon { background-position: 0 75.041982%; background-size: 1411.538462%; }
+.reminder-selected { background-position: 0 75.587741%; background-size: 1411.538462%; }
+.email-normal { background-position: 0 76.021798%; background-size: 1468%; }
+.plans-select { background-position: 0 76.516264%; background-size: 1468%; }
+.plans-unselect { background-position: 0 77.040923%; background-size: 1468%; }
+.sort-icon { background-position: 0 77.549308%; background-size: 1468%; }
+.fav-icon-normal { background-position: 0 78.052875%; background-size: 1529.166667%; }
+.fav-icon-selected { background-position: 0 78.556441%; background-size: 1529.166667%; }
+.follow-icon { background-position: 0 79.060008%; background-size: 1529.166667%; }
+.home-icon { background-position: 0 79.546885%; background-size: 1529.166667%; }
+.refine-icon { background-position: 0 80.04616%; background-size: 1529.166667%; }
+.remove { background-position: 0 80.549727%; background-size: 1529.166667%; }
+.search-icon-dark { background-position: 0 81.053294%; background-size: 1529.166667%; }
+.share-icon { background-position: 0 81.556861%; background-size: 1529.166667%; }
+.threedots-icon { background-position: 0 82.060428%; background-size: 1529.166667%; }
+.triangle { background-position: 0 82.356635%; background-size: 1529.166667%; }
+.tvguide-next-icon { background-position: 0 82.989907%; background-size: 1529.166667%; }
+.tvguide-prev-icon { background-position: 0 83.704794%; background-size: 1529.166667%; }
+.watch-later-icon-normal { background-position: 0 84.242551%; background-size: 1529.166667%; }
+.watch-later-icon-selected { background-position: 0 84.746118%; background-size: 1529.166667%; }
+.payment-select { background-position: 0 85.231802%; background-size: 1595.652174%; }
+.payment-unselect { background-position: 0 85.714286%; background-size: 1595.652174%; }
+.search-icon { background-position: 0 86.196769%; background-size: 1668.181818%; }
+.tvguide-back-icon { background-position: 0 86.534031%; background-size: 1668.181818%; }
+.playiconpink { background-position: 0 86.957433%; background-size: 1747.619048%; }
+.right-arrow { background-position: 0 87.324534%; background-size: 1931.578947%; }
+.tvguide-close-icon { background-position: 0 87.71746%; background-size: 1931.578947%; }
+.watch-now-icon { background-position: 0 88.208141%; background-size: 1931.578947%; }
+.closespotlight { background-position: 0 88.600168%; background-size: 2038.888889%; }
+.headerclose-icon { background-position: 0 88.958726%; background-size: 2038.888889%; }
+.seperator-round { background-position: 0 89.333613%; background-size: 2038.888889%; }
+.ellipse-spotlight { background-position: 0 89.67323%; background-size: 2293.75%; }
+.ellipse-spotlightselect { background-position: 0 90.008379%; background-size: 2293.75%; }
+.down-arrow { background-position: 0 90.343527%; background-size: 2293.75%; }
+.ellipse-normal { background-position: 0 90.678676%; background-size: 2293.75%; }
+.ellipse-selected { background-position: 0 91.013825%; background-size: 2293.75%; }
+.left-arrow { background-position: 0 91.617647%; background-size: 2293.75%; }
+.left-nav { background-position: 0 91.977377%; background-size: 2293.75%; }
+.left-nav-selected { background-position: 0 92.312526%; background-size: 2293.75%; }
+.next-arrow { background-position: 0 92.959227%; background-size: 2293.75%; }
+.pointer { background-position: 0 94.225888%; background-size: 2293.75%; }
+.prev-arrow { background-position: 0 94.934847%; background-size: 2293.75%; }
+.right-arrow { background-position: 0 95.567227%; background-size: 2293.75%; }
+.right-nav { background-position: 0 95.915375%; background-size: 2293.75%; }
+.right-nav-selected { background-position: 0 96.250524%; background-size: 2293.75%; }
+.star-empty-icon { background-position: 0 96.585672%; background-size: 2293.75%; }
+.star-filled-icon { background-position: 0 96.920821%; background-size: 2293.75%; }
+.up-arrow { background-position: 0 97.25597%; background-size: 2293.75%; }
+.audio-icon { background-position: 0 97.570681%; background-size: 2446.666667%; }
+.remove-icon { background-position: 0 97.884817%; background-size: 2446.666667%; }
+.arrow-icon { background-position: 0 98.15784%; background-size: 2823.076923%; }
+.description-downarrow { background-position: 0 98.32706%; background-size: 2823.076923%; }
+.description-uparrow { background-position: 0 98.494354%; background-size: 2823.076923%; }
+.next-icon { background-position: 0 98.826979%; background-size: 4587.5%; }
+.share-arrow { background-position: 0 99.120603%; background-size: 5242.857143%; }
+.breadcrumplayer { background-position: 0 99.289%; background-size: 7340%; }
+.pointer-touch { background-position: 0 100%; background-size: 18350%; }

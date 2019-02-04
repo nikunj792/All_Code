@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/play.css">
+    <link rel="stylesheet" href="css/embed.css">
+    <link rel="stylesheet" href="css/css_common.css">
+    <title>Video Player</title>
+</head>
+<body>
+    <div id="render"></div>
+    <div id='myElement'>Click for loading the player...</div>
+    <button onclick="createPlaylist()">Play Video</button>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.3.3/rxjs.umd.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./js/rx.lite.js"></script>
+    <script type="text/javascript" src="http://p.jwpcdn.com/6/10/jwplayer.js"></script>
+    <script type='text/javascript' src='./js/videoObject.js'></script>
+    <script type='text/javascript' src='./js/ad.js'></script>
+    <script type="text/javascript" src="./js/browser.js"></script>
+    <script src="./js/bundle.js"></script>
+
+<script>
+  var token = this.localStorage.getItem('token');
+  var androidORiOS = this.navigator.userAgent.match(/Android|iPhone|iPad|iPod/i);
+  var browser = get_browser();    
+  var data = get_data();
+  
+  /* For Creating the PlayList*/
+
+  function createPlaylist() {
+      let premiumUser, adMute, mobile_UC=false;
+      let advertisement, playlist;  
+      if (token) {
+      /* Code added here to avoid service call from here */
+      //   premiumUser = this.sub.checkPlanApiSuccess(false);
+          premiumUser = true;
+      }
+      if ((browser.name.match(/UCBrowser/i) || browser.name.match(/UBrowser/i)) && this.navigator.userAgent.match(/mobile|iPhone|iPod|iPad/i)) {
+          mobile_UC = true;
+      }
+      adMute =  (mobile_UC && !this.navigator.userAgent.match(/mobile|iPhone|iPod|iPad/i))  ? false : true;
+      /* Code removed here */
+      // if (this.videoIsLive || data.content_type === 'trailer' || (premiumUser && premiumUser.length > 0)) {
+      //   this.advertisement = null;
+      // } 
+      // if (data.content_type === 'trailer' || (premiumUser && premiumUser.length > 0)) {
+      //   this.advertisement = null;
+      // }
+      if (data.content_type === 'trailer' || premiumUser) {
+        advertisement = null;
+      } else {
+        advertisement = {
+          'client': 'googima',
+          'schedule': getAd(androidORiOS,data),
+          'vpaidmode' : 'enabled',
+          'autoplayadsmuted': adMute
+        };
+      }
+      /* Remove this line from down object */
+       // 'file': this.resourceUrl,
+      playlist = [{        
+        'file': "https://zee5vodnd.akamaized.net/hls/1080p/tvshows/ONAIR_SHOWS/Zee_Telugu/September2018/13092018/Kunkuma_Bhagya_Ep845_TEL64390.mp4/index.m3u8?hdnea=st=1548406385~exp=1548409385~acl=/*~hmac=0bbb1052469940e59388697d643f437f90d2d6a839ca15fe0aa96f8eef6a342e",       
+        'drm': null,
+        'tracks': [],
+      }];
+      setupPlayer(playlist,mobile_UC);
+      // addPlayerEventListeners();
+    }
+
+/* For Adding the Event Listeners */
+  function addPlayerEventListeners() {
+    jwplayer.onplay((event) => onPlayerReady(event));
+    // jwplayer().onSetupErrors((event) => onSetupErrors(event));
+    // this.player.on('ready', (event) => this.onPlayerReady(event));
+    // this.player.on('setupError', (event) => this.onSetupErrors(event));
+  }
+
+  function onSetupErrors(event) {
+    this.buffering = false;
+    this.showErrorState(event.message);
+  }
+
+  function onPlayerReady(event) {
+    let qoe;
+    qoe = this.player.qoe();
+    // console.log('The player set up in', JSON.stringify(qoe.setupTime), 'ms.');
+    // if (this.navigator.userAgent.match(/Android/i) && this.browser.name.match(/firefox/i)) { // Android firefox
+    //   this.player.play();
+    // }
+
+    if (environment.charmboard && data.content_type === 'episode') {
+      let videoTag;
+      videoTag = jwplayer().getContainer().querySelector('video');
+      if (data.id) {
+        videoTag.setAttribute('id', data.id);
+        zee5Touch(data.id);
+      }  else {
+        videoTag.setAttribute('id', 'jwPlayerVideoId');
+        zee5Touch('jwPlayerVideoId');
+      }
+    }
+    this.videoService.comscoreVideoevents(data, this.player);
+    this.player.on('playlistItem', () => this.onPlaylistItem());
+    this.player.on('firstFrame', (e) => this.initialization(e));
+    this.player.on('complete', () => this.onComplete());
+    this.player.on('error', (e) => this.onErrors(e));
+    this.player.on('buffer', (e) => this.onBuffer(e));
+    this.player.on('captionsList', () => this.onCaptionsList());
+    this.player.on('audioTracks', (e) => this.onAudioTracks(e));
+    this.player.on('levels', () => this.onlevels());
+    this.player.on('seeked', (e) => this.onseeked(e));
+    this.player.on('play', (e) => this.onplay(e));
+    this.player.on('pause', (e) => this.onpause(e));
+    this.player.on('time', (e) => this.updateCurrentTime(e));
+    this.player.on('adPlay', (e) => this.onAdPlay(e));
+    this.player.on('adClick', (e) => this.onAdClick(e));
+    this.player.on('adImpression', (e) => this.onAdImpression(e));
+    this.player.on('adSkipped', (e) => this.onAdSkipped(e));
+    this.player.on('adComplete', (e) => this.onAdComplete(e));
+    this.player.on('adError', (e) => this.adError(e));
+    this.player.on('fullscreen', (e) => this.onFullscreenchange(e));
+    this.player.on('autostartNotAllowed', (e) => this.onautostartNotAllowed(e));
+  }
+
+  function showErrorState(message) {
+    if (message !== sorryError && message !== tryAgainMessage && message !== timeLimit && message !== deviceLimit && message !== noNetworkText && message !== noUrlText) {
+      this.errorMsg = tryAgainMessage;
+    } else {
+      this.errorMsg = message;
+    }
+    if ((this.mobile_UC || this.xiaomi) && this.player) {
+      this.player.remove();
+    }
+    if (this.retryCounter && message !== noUrlText && message !== noNetworkText && message !== timeLimit && message !== deviceLimit) {
+      --this.retryCounter;
+      // if ((this.mobile_UC || this.xiaomi) && this.player) {
+      //   this.player.remove();
+      // }
+      this.retryClick();
+    } else {
+      if (message !== sorryError && message !== tryAgainMessage && message !== timeLimit && message !== deviceLimit) {
+        let details, msg;
+        msg = message === noNetworkText ? 'Network Error' : message === noUrlText ? 'No data available' : message;
+        details = {
+          'event': 'ErrorEvent',
+          'ErrorType': 'video error',
+          'ErrorDescription': msg,
+          'ErrorTimings': (this.player ? this.player.getPosition() : 'NA') || 'NA',
+          'ErrorMetrics': '1',
+        };
+        this.googleAnalyticPost(details);
+      }
+      // if ((this.mobile_UC || this.xiaomi) && this.player) {
+      //   this.player.remove();
+      // }
+      this.buffering = false;
+      this.showBackgroundImage = true;
+      this.error = true;
+      this.startPlayback = true; // not to show play icon in UC browser
+      this.tryagain = true; // not to show re-try icon in UC browser
+      $('#playerOverlay').css('display', 'block');
+      if (this.backroute) {
+        $('#PlayerContainer').css('pointer-events', '');
+        $('#playerHeaderBar').css('pointer-events', '');
+        $('#playerControlsBar').css('pointer-events', 'none');
+        $('#playerInfoSection').css('pointer-events', 'none');
+      } else {
+        $('#PlayerContainer').css('pointer-events', 'none');
+      }
+    }
+  }
+
+function setupPlayer(playlist, mobile_UC)
+    {
+        let mute, autostart, androidFF, firefox,muteLaunch= false;
+        if (this.navigator.userAgent.match(/mobile|iPhone|iPod|iPad/i) && !mobile_UC) {
+          muteLaunch = true;
+          mute = true;
+        } else {
+          mute = false;
+        }
+        autostart =  mobile_UC ? false : true;
+        androidFF = this.navigator.userAgent.match(/Android/i) && this.browser.name.match(/firefox/i);
+        this.startPlayback = autostart;
+        if (!autostart) {
+          $('#myElement').css('pointer-events', '');
+          $('#myElement').css('display', 'none');
+        }
+
+          // var url = `https://www.zee5.com/embed/${episodeId}`;
+          var div = document.createElement('div');
+              div.setAttribute('id','player');
+              div.setAttribute('class','player');        
+              div.setAttribute('width','600px');
+              div.setAttribute('height','600px');
+              document.getElementById('myElement').appendChild(div);
+          let playerSetup = {
+              'file': playlist,
+              'width': '100%',
+              'height': '100%',
+              'controls': false,
+              'autostart': autostart,
+              'mute': 'mute',
+              'advertising': 'this.advertisement',
+              'primary': 'html5',
+              'hlshtml': 'true',
+              'defaultBandwidthEstimate': '250000',
+              'preload': 'auto'
+          };
+          // jwplayer('myElement').setup(playerSetup);
+                  jwplayer("myElement").setup({
+                  "flashplayer": '/jwplayer/player.swf',
+                  "file": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4",
+                  "Access-Control-Allow-Origin":"*", 
+                  "icons":false,         
+                  "autostart": "viewable",
+                  rtmp: {
+                      securetoken: 'abcdefg'
+                  },
+                  });
+          // "playlist": [{
+          //                         "file": url,
+          //                         "image": "zee.jpg",
+          //                         "title": "Sintel Trailer",
+          //                         "mediaid": "ddra573"
+          //                     }],
+    }
+    </script>
+</body>
+</html>

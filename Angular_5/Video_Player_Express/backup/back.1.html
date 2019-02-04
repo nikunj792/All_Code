@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Player</title>
+</head>
+<body>
+    <div id="render"></div>
+    <div id='myElement'>Click for loading the player...</div>
+    <button onclick="player('player','0-1-kundalibhagya-kundalibhagyaseason1-episode_1179624267')">Play Video</button>    
+    <script type="text/javascript" src="http://p.jwpcdn.com/6/10/jwplayer.js"></script>
+    <script src="./bundle.js"></script>
+    <script>
+        function player(divId,episodeId)
+        {            
+            var url = `https://www.zee5.com/embed/${episodeId}`;
+            var div = document.createElement('div');
+                div.setAttribute('id',divId);
+                div.setAttribute('class',divId);        
+                div.setAttribute('width','600px');
+                div.setAttribute('height','600px');
+                document.getElementById('myElement').appendChild(div);
+            let playerSetup = {
+                'file': "sample.mp4",
+                'width': '100%',
+                'height': '100%',
+                'controls': 'false',
+                'autostart': 'autostart',
+                'mute': 'mute',
+                'advertising': 'this.advertisement',
+                'primary': 'html5',
+                'hlshtml': 'true',
+                'defaultBandwidthEstimate': '250000',
+                'preload': 'auto'
+            };
+            jwplayer(divId).setup(playerSetup);
+                    // jwplayer(divId).setup({
+                    // "flashplayer": '/jwplayer/player.swf',
+                    // "file": "sample.mp4",
+                    // "Access-Control-Allow-Origin":"*", 
+                    // "icons":false,         
+                    // "autostart": "viewable",
+                    // rtmp: {
+                    //     securetoken: 'abcdefg'
+                    // },
+                    // });
+            // "playlist": [{
+            //                         "file": url,
+            //                         "image": "zee.jpg",
+            //                         "title": "Sintel Trailer",
+            //                         "mediaid": "ddra573"
+            //                     }],
+        }
+    </script>
+</body>
+</html>

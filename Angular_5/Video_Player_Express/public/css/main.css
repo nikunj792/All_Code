@@ -1,0 +1,687 @@
+.titleText[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+#snackbarParental[_ngcontent-c18] {
+  visibility: hidden;
+  min-width: 200px;
+  margin-left: -125px;
+  background-color: #6e6e6e;
+  color: #eee;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+#snackbarParental.show[_ngcontent-c18] {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+  animation: fadein 0.5s, fadeout 0.5s 4.5s;
+}
+#snackbarSocialApi[_ngcontent-c18] {
+  visibility: hidden;
+  min-width: 200px;
+  margin-left: -125px;
+  background-color: #6e6e6e;
+  color: #eee;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+#snackbarSocialApi.show[_ngcontent-c18] {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+  animation: fadein 0.5s, fadeout 0.5s 4.5s;
+}
+.callfunction[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.callfunction[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.callfunctionSub[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.callfunctionSub[_ngcontent-c18]   .title[_ngcontent-c18] {
+  color: #6e6e6e !important;
+  font-size: 12px !important;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.borderDiv[_ngcontent-c18] {
+  border-bottom: 1px solid #1b0e1f;
+  height: calc(38px);
+  position: relative;
+  bottom: 17px;
+}
+.hamburgerInit[_ngcontent-c18] {
+  width: 1920px;
+  height: 110vh;
+  position: fixed;
+  z-index: 1;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18] {
+  width: calc(100%*480/1920);
+  height: calc(110vh);
+  background-color: black;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(100vh);
+  background-color: black;
+  position: relative;
+  overflow-y: scroll;
+  margin-top: -45px;
+  margin-left: -17px;
+  direction: rtl;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .closeClass[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(50px);
+  border-bottom: 1px solid #1b0e1f;
+  cursor: pointer;
+  cursor: hand;
+  direction: ltr;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .closeClass[_ngcontent-c18]   .imageclose[_ngcontent-c18] {
+  position: relative;
+  left: 10px;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .homeContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .homeContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .liveContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .liveContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .showsContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .showsContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .premiumContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .premiumContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .moviesContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .moviesContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .newsContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .newsContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .zeeContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .zeeContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .videosContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .videosContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .profileContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .profileContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .loginContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .loginContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .registerContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .registerContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .accountContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .accountContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .subContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .subContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .LanguageContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .LanguageContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .parentContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .parentContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .settingContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .settingContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .deviceContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .deviceContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .spotlightContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .spotlightContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .boardingContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .boardingContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .aboutContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .aboutContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .privacyContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .privacyContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .faqContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .faqContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .termsContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .termsContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .cookiesContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .cookiesContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .contactContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .contactContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .logoutContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .logoutContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .AppContainer[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(44px);
+  position: relative;
+  cursor: pointer;
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .AppContainer[_ngcontent-c18]   .title[_ngcontent-c18] {
+  color: #6e6e6e !important;
+  font-size: 12px !important;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  color: #fffbfb;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  left: calc(100%*35/310);
+  position: absolute;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+.hamburgerInit[_ngcontent-c18]   .hamburgerStart[_ngcontent-c18]   .hamburgerDropDown[_ngcontent-c18]   .extraClass[_ngcontent-c18] {
+  width: calc(100%);
+  height: calc(78px);
+  position: relative;
+}
+@media screen and (max-width: 10000px) and (min-width: 769px) {
+  .hamburgerStart[_ngcontent-c18] {
+    display: none;
+  }
+}

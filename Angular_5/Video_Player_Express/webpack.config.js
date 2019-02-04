@@ -1,0 +1,25 @@
+module.exports={
+    entry:'./public/js/index.js',
+    output:{
+        path:__dirname,
+        filename:'./public/js/bundle.js'},
+    watch: true,
+    resolve:{
+        extensions:['.js','.jsx',''],
+        alias:[
+        ]
+    },
+    module:{
+        loaders:[
+            {
+                loader:'babel-loader',
+                query:{
+                    presets:['react','es2015']
+                },
+            test:/\.jsx?$/,
+            exclude:/(node_modules|bower_components)/
+            }
+    ]
+    },
+    devtool:'cheap-module-eval-source-map'
+}
