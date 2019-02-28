@@ -2,17 +2,39 @@
 <html>
 
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
 </head>
 
 <body>
 
-  <div id="reactForm">    
+  <div id="reactForm">
   </div>
   <div id="sample"></div>
 
   <script src="bundle.js">
   </script>
 </body>
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      appId: '290597248278499',
+      autoLogAppEvents: true,
+      xfbml: true,
+      version: 'v2.11'
+    });
+
+    // Broadcast an event when FB object is ready
+    var fbInitEvent = new Event('FBObjectReady');
+    document.dispatchEvent(fbInitEvent);
+  };
+
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
 </html>
